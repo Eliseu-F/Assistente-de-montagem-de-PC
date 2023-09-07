@@ -14,6 +14,6 @@ com pouco ou nenhum conhecimento em especificações técnicas do hardware.
 -CRUD - Operador site
 -Filtro por Jogo
 ![Tela principal - Sistema assistente de montagem de PC](docs/tela-principal.png)
-![ERD Lógico - Sistema assistente de montagem de PC](docs/ER - LOGICO PI3.png).
-![ERD Conceitual - Sistema assistente de montagem de PC](docs/ER - CONCEITUAL PI3.png)
-![UML - Sistema assistente de montagem de PC](docs/DIAGRAMA-CASO-DE-USO.png)
+![ERD Lógico - Sistema assistente de montagem de PC](docs/er-logico.png).
+![ERD Conceitual - Sistema assistente de montagem de PC](docs/er-conceitual.png)
+![UML - Sistema assistente de montagem de PC](docs/diagrama-uml.png)
