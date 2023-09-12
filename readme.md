@@ -13,7 +13,9 @@ com pouco ou nenhum conhecimento em especificações técnicas do hardware.
 -pagina de login
 -CRUD - Operador site
 -Filtro por Jogo
+-Tela Categorias
 ![Tela principal - Sistema assistente de montagem de PC](docs/tela-principal.png)
+![Tela Categorias - Escolha o PC de acordo com o game](docs/tela-categorias.png)
 ![ERD Lógico - Sistema assistente de montagem de PC](docs/er-logico.png).
 ![ERD Conceitual - Sistema assistente de montagem de PC](docs/er-conceitual.png)
 ![UML - Sistema assistente de montagem de PC](docs/diagrama-uml.png)
