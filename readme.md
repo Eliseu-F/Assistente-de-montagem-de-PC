@@ -15,12 +15,12 @@ com pouco ou nenhum conhecimento em especificações técnicas do hardware.
 -CRUD - Operador site
 -Tela Usuario
 -Tela de Categorias
--Tela de especificações
+-Tela de especificacoes
 ![Tela principal - Sistema assistente de montagem de PC](docs/tela-principal.png)
 ![Tela Usuario -Escolha do tipo de pc - Profissional ou Gamer](docs/tela-usuario.png)
 ![Tela Categorias - Escolha o PC de acordo com o game](docs/tela-categorias.png)
-![Tela Especificações Gamer - Montagem do pc - apresentação das informações para o usuário](docs/tela-especificações.png)
-![Tela Especificações Pro - Montagem do Pc Profissional](docs/tela-especificações-pro.png)
+![Tela Especificações Gamer - Montagem do pc - apresentação das informações para o usuário](docs/tela-especificacoes.png)
+![Tela Especificações Pro - Montagem do Pc Profissional](docs/tela-especificacoes-pro.png)
 ![ERD Lógico - Sistema assistente de montagem de PC](docs/er-logico.png).
 ![ERD Conceitual - Sistema assistente de montagem de PC](docs/er-conceitual.png)
 ![UML - Sistema assistente de montagem de PC](docs/diagrama-uml.png)
