@@ -18,7 +18,7 @@ com pouco ou nenhum conhecimento em especificações técnicas do hardware.
 -Tela de especificacoes
 ![Tela principal - Sistema assistente de montagem de PC](docs/tela-principal.png)
 ![Tela Login - Sistema assistente de montagem de PC](docs/Tela-login.png)
-![Tela cadastro - Sistema assistente de montagem de PC](docs/Tela-cadastro.png)
+![Tela cadastro - Sistema assistente de montagem de PC](docs/tela-de-cadastro.png)
 ![Tela Usuario -Escolha do tipo de pc - Profissional ou Gamer](docs/tela-usuario.png)
 ![Tela Categorias - Escolha o PC de acordo com o game](docs/tela-categorias.png)
 ![Tela Especificações Gamer - Montagem do pc - apresentação das informações para o usuário](docs/tela-especificacoes.png)
