@@ -30,7 +30,6 @@ public class CreateComputerServlet extends HttpServlet {
             computerDao.updateComputer(computer);
         }
 
-
         resp.sendRedirect("/find-all-computers");
 
     }
