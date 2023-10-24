@@ -14,5 +14,7 @@
 
 </form>
 
+<a href="/jogos.jsp">Jogos</a>
+
 </body>
 </html>
