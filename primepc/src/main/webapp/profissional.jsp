@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -45,7 +45,6 @@
         }
 
         .buttons_games {
-
             flex: 1;
             max-width: 174px;
             height: 52px;
@@ -68,8 +67,15 @@
             text-decoration: none;
         }
 
+        .catalog {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between; /* Alinhar os cards horizontalmente */
+            flex-wrap: wrap; /* Permitir que eles quebrem para a próxima linha em telas menores */
+        }
+
         .card {
-            width: 100%;
+            width: calc(33.33% - 20px); /* Distribuir igualmente em telas maiores */
             max-width: 400px;
             max-height: 400px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -77,8 +83,6 @@
             cursor: pointer;
             margin: 10px;
             transition: transform 0.2s;
-            margin-right: 200px;
-
         }
 
         .card img {
@@ -89,26 +93,16 @@
         .card:hover {
             transform: scale(1.05);
         }
-        .text_games{
+
+        .text_games {
             text-align: initial;
             color: white;
             font-weight: bold;
         }
-        .catalog{
-            margin-left: 90px;
-            margin-top: 85px;
-            display:flex;
-            flex-wrap: wrap;
-            justify-content: center;
 
-        }
         * {
             margin: 0;
             padding: 0;
-
-            /*
-            outline: 1px solid blue;
-             */
         }
     </style>
 </head>
@@ -137,14 +131,14 @@
         <button class="buttons_games">PUZZLE</button>
     </div>
     <div class="catalog">
-    <div class="card" onclick="window.location.href='/league'">
-        <img src="imgs/office.png" alt="League Of Legends">
-        <p class="text_games">Pacote Office</p>
-    </div>
+        <div class="card" onclick="window.location.href='/league'">
+            <img src="imgs/computer.jpg" alt="League Of Legends">
+            <p class="text_games">Pacote Office</p>
+        </div>
 
         <div class="card" onclick="window.location.href='/warzone'">
-        <img src="imgs/programmer.jpg" alt="Warzone">
-        <p class="text_games">Programação</p>
+            <img src="imgs/programmer.jpg" alt="Warzone">
+            <p class="text_games">Programacao</p>
         </div>
 
         <div class="card" onclick="window.location.href='/fifa'">
