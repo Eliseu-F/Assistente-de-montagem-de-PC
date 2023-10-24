@@ -38,24 +38,6 @@
             margin-left: 90px;
         }
 
-        .container_buttons {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .buttons_games {
-            flex: 1;
-            max-width: 174px;
-            height: 52px;
-            background: white;
-            border-radius: 37.50px;
-            font-size: 1.2rem;
-            color: #000FA6;
-            font-family: Bahnschrift;
-            margin-right: 90px;
-        }
-
         .links {
             display: flex;
             font-size: 2rem;
@@ -70,24 +52,25 @@
         .catalog {
             margin-top: 20px;
             display: flex;
-            justify-content: space-between; /* Alinhar os cards horizontalmente */
-            flex-wrap: wrap; /* Permitir que eles quebrem para a próxima linha em telas menores */
+            justify-content: space-between;
+            flex-wrap: wrap;
         }
 
         .card {
-            width: calc(33.33% - 20px); /* Distribuir igualmente em telas maiores */
+            width: calc(33.33% - 20px);
             max-width: 400px;
             max-height: 400px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             text-align: center;
             cursor: pointer;
-            margin: 10px;
+            margin: 20px;
             transition: transform 0.2s;
         }
 
         .card img {
             width: 100%;
             height: 100%;
+            border-radius: 10%;
         }
 
         .card:hover {
@@ -95,9 +78,11 @@
         }
 
         .text_games {
-            text-align: initial;
+            text-align: center;
             color: white;
             font-weight: bold;
+            font-size: 22px;
+
         }
 
         * {
@@ -118,18 +103,10 @@
 <div>
     <div>
         <h1 class="categoria">
-            Categoria
+            Computadores para uso profissional
         </h1>
     </div>
-    <div class="container_buttons">
-        <button class="buttons_games">Todos</button>
-        <button class="buttons_games">Moba</button>
-        <button class="buttons_games">FPS</button>
-        <button class="buttons_games">ESPORTES</button>
-        <button class="buttons_games">RPG</button>
-        <button class="buttons_games">SIMULACAO</button>
-        <button class="buttons_games">PUZZLE</button>
-    </div>
+
     <div class="catalog">
         <div class="card" onclick="window.location.href='/league'">
             <img src="imgs/computer.jpg" alt="League Of Legends">

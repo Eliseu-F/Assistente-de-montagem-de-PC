@@ -14,11 +14,10 @@
 
 </form>
 
-git
+  <button>
+      <a href="/login.jsp">Logar</a>
+  </button>
 
-<form action="/login" method="post">
-<button>Logar</button>
-</form>
 
 
 
