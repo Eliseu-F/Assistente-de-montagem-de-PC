@@ -83,7 +83,7 @@
             </button>
             <button class="button" type="type2">
                 <h2>Para Trabalho</h2>
-                <a href="/trabalho"><img class="button img" src="imgs/trabalho.svg" alt="Imagem 2"></a>
+                <a href="/profissional.jsp"><img class="button img" src="imgs/trabalho.svg" alt="Imagem 2"></a>
             </button>
         </div>
     </div>
