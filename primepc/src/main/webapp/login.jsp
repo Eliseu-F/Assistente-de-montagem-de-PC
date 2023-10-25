@@ -94,6 +94,7 @@
             return false;
         }
         errorMessage.textContent = "";
+
     }
 </script>
 </body>

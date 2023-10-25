@@ -38,24 +38,6 @@
             margin-left: 90px;
         }
 
-        .container_buttons {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .buttons_games {
-            flex: 1;
-            max-width: 174px;
-            height: 52px;
-            background: white;
-            border-radius: 37.50px;
-            font-size: 1.2rem;
-            color: #000FA6;
-            font-family: Bahnschrift;
-            margin-right: 90px;
-        }
-
         .links {
             display: flex;
             font-size: 2rem;
@@ -70,25 +52,29 @@
         .catalog {
             margin-top: 20px;
             display: flex;
-            justify-content: space-between; /* Alinhar os cards horizontalmente */
-            flex-wrap: wrap; /* Permitir que eles quebrem para a próxima linha em telas menores */
+            justify-content: space-between;
+            flex-wrap: wrap;
         }
 
         .card {
-            width: calc(33.33% - 20px); /* Distribuir igualmente em telas maiores */
+            width: calc(33.33% - 20px);
             max-width: 400px;
             max-height: 400px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             text-align: center;
             cursor: pointer;
-            margin: 10px;
+            margin: 20px;
             transition: transform 0.2s;
         }
 
         .card img {
             width: 100%;
             height: 100%;
+<<<<<<< HEAD
 
+=======
+            border-radius: 10%;
+>>>>>>> 0134e74a9ca8c686efc3396dddb5ae5e848b6a62
         }
 
         .card:hover {
@@ -96,9 +82,11 @@
         }
 
         .text_games {
-            text-align: initial;
+            text-align: center;
             color: white;
             font-weight: bold;
+            font-size: 22px;
+
         }
 
         * {
@@ -118,6 +106,7 @@
 </header>
 <div>
     <div>
+<<<<<<< HEAD
 
     </div>
 
@@ -134,6 +123,26 @@
 
         <div class="card" onclick="window.location.href='/Design'">
             <img src="imgs/webdesign.avif" alt="Design">
+=======
+        <h1 class="categoria">
+            Computadores para uso profissional
+        </h1>
+    </div>
+
+    <div class="catalog">
+        <div class="card" onclick="window.location.href='/especificacao.jsp'">
+            <img src="imgs/computer.jpg" alt="League Of Legends">
+            <p class="text_games">Pacote Office</p>
+        </div>
+
+        <div class="card" onclick="window.location.href='/especificacao.jsp'">
+            <img src="imgs/programmer.jpg" alt="Warzone">
+            <p class="text_games">Programacao</p>
+        </div>
+
+        <div class="card" onclick="window.location.href='/especificacao.jsp'">
+            <img src="imgs/webdesign.avif" alt="Fifa">
+>>>>>>> 0134e74a9ca8c686efc3396dddb5ae5e848b6a62
             <p class="text_games">Design</p>
         </div>
     </div>

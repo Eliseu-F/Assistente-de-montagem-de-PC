@@ -20,12 +20,11 @@ public class LoginAccountServlet extends HttpServlet {
 
         if (isValidCredentials) {
             // Credenciais válidas, redirecionar para a página redireciona para pagina dos computadores
-            resp.sendRedirect("/find-all-computers");
+            resp.sendRedirect("/usuario.jsp");
         } else {
             // Credenciais inválidas, exibir alerta
             resp.setContentType("text/html");
             resp.getWriter().println("<script>alert('Usuário ou senha inválidos. Tente novamente.');</script>");
-            resp.sendRedirect("login.jsp");
         }
     }
 }
