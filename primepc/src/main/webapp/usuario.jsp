@@ -1,3 +1,7 @@
+<%
+    String username = (String) session.getAttribute("username");
+%>
+
 <!DOCTYPE html>
 <html>
 
@@ -72,7 +76,12 @@
     </style>
 
 <body>
-<div><header><a href="/login.jsp">Sair</a></header></div>
+<div>
+    <header>
+    <a href="/login.jsp">Sair</a>
+        <h1>Bem-vindo, <%= username %></h1>
+</header>
+</div>
     <div class="container">
         <h1>Monte seu PC</h1>
         <p>Qual a finalidade?</p>
@@ -88,5 +97,16 @@
         </div>
     </div>
 </body>
+<script>
+    function redirectToPage(category) {
+        const username = "<%= username %>"; // Obtenha o nome de usuário da sessão
+
+        // Construa o URL da página de destino com o nome de usuário
+        const destinationURL = `/${category}.jsp?username=${username}`;
+
+        // Redirecione o usuário para a página de destino
+        window.location.href = destinationURL;
+    }
+</script>
 
 </html>

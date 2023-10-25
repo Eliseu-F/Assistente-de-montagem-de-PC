@@ -1,10 +1,14 @@
 package br.com.primepc.servlet.servlet;
 
 import br.com.primepc.servlet.dao.AccountDao;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 @WebServlet("/login")
@@ -19,8 +23,17 @@ public class LoginAccountServlet extends HttpServlet {
         boolean isValidCredentials = accountDao.validateUserCredentials(username, password);
 
         if (isValidCredentials) {
-            // Credenciais válidas, redirecionar para a página redireciona para pagina dos computadores
-            resp.sendRedirect("/usuario.jsp");
+            // Configurar o nome de usuário na sessão
+            HttpSession session = req.getSession();
+            session.setAttribute("username", username);
+
+            // Encaminhar a solicitação para a página usuario.jsp
+            RequestDispatcher dispatcher = req.getRequestDispatcher("/usuario.jsp");
+            try {
+                dispatcher.forward(req, resp);
+            } catch (ServletException e) {
+                throw new RuntimeException(e);
+            }
         } else {
             // Credenciais inválidas, exibir alerta
             resp.setContentType("text/html");

@@ -25,13 +25,6 @@
             padding: 20px;
         }
 
-        .categoria {
-            font-size: 3rem;
-            margin-left: 50px;
-            text-align: initial;
-            color: white;
-            padding: 50px;
-        }
 
         .logo {
             font-size: 2rem;
@@ -70,11 +63,8 @@
         .card img {
             width: 100%;
             height: 100%;
-<<<<<<< HEAD
-
-=======
             border-radius: 10%;
->>>>>>> 0134e74a9ca8c686efc3396dddb5ae5e848b6a62
+
         }
 
         .card:hover {
@@ -106,28 +96,10 @@
 </header>
 <div>
     <div>
-<<<<<<< HEAD
 
     </div>
 
-    <div class="catalog">
-        <div class="card" onclick="window.location.href='/Office'">
-            <img src="imgs/computer.jpg" alt="Office">
-            <p class="text_games">Pacote Office</p>
-        </div>
 
-        <div class="card" onclick="window.location.href='/Programacao'">
-            <img src="imgs/programmer.jpg" alt="Programacao">
-            <p class="text_games">Programacao</p>
-        </div>
-
-        <div class="card" onclick="window.location.href='/Design'">
-            <img src="imgs/webdesign.avif" alt="Design">
-=======
-        <h1 class="categoria">
-            Computadores para uso profissional
-        </h1>
-    </div>
 
     <div class="catalog">
         <div class="card" onclick="window.location.href='/especificacao.jsp'">
@@ -142,7 +114,6 @@
 
         <div class="card" onclick="window.location.href='/especificacao.jsp'">
             <img src="imgs/webdesign.avif" alt="Fifa">
->>>>>>> 0134e74a9ca8c686efc3396dddb5ae5e848b6a62
             <p class="text_games">Design</p>
         </div>
     </div>
