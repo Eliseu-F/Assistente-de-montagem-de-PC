@@ -9,6 +9,10 @@ Nosso projeto tem como principal objetivo: auxiliar o usuário a realizar a mont
 Que esteja de acordo com o seu orçamento, possibilitando ao usuário a inteligibilidade e facilidade mesmo para pessoas leigas
 com pouco ou nenhum conhecimento em especificações técnicas do hardware.
 
+-Mostrar peças de computadores de acordo com a finalidade: Para jogos, ou para uso profissional (que não necessita de um hardware muito potente)
+-Usuario vai ter um PC pré montado, para que ele só precise comprar as peças.
+-
+
 -Pagina Inicial
 -pagina de login
 -pagina de cadastro
@@ -16,6 +20,9 @@ com pouco ou nenhum conhecimento em especificações técnicas do hardware.
 -Tela Usuario
 -Tela de Categorias
 -Tela de especificacoes
+
+
+
 ![Tela principal - Sistema assistente de montagem de PC](docs/tela-principal.png)
 ![Tela Login - Sistema assistente de montagem de PC](docs/Tela-login.png)
 ![Tela cadastro - Sistema assistente de montagem de PC](docs/tela-de-cadastro.png)
