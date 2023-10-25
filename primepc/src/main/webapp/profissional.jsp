@@ -88,6 +88,7 @@
         .card img {
             width: 100%;
             height: 100%;
+
         }
 
         .card:hover {
@@ -112,37 +113,27 @@
     <h3 class="logo">PrimePC</h3>
     <div class="links">
         <a href="/home">Home</a>
-        <a href="/usuario">Usuario</a>
+        <a href="/usuario.jsp">Usuario</a>
     </div>
 </header>
 <div>
     <div>
-        <h1 class="categoria">
-            Categoria
-        </h1>
+
     </div>
-    <div class="container_buttons">
-        <button class="buttons_games">Todos</button>
-        <button class="buttons_games">Moba</button>
-        <button class="buttons_games">FPS</button>
-        <button class="buttons_games">ESPORTES</button>
-        <button class="buttons_games">RPG</button>
-        <button class="buttons_games">SIMULACAO</button>
-        <button class="buttons_games">PUZZLE</button>
-    </div>
+
     <div class="catalog">
-        <div class="card" onclick="window.location.href='/league'">
-            <img src="imgs/computer.jpg" alt="League Of Legends">
+        <div class="card" onclick="window.location.href='/Office'">
+            <img src="imgs/computer.jpg" alt="Office">
             <p class="text_games">Pacote Office</p>
         </div>
 
-        <div class="card" onclick="window.location.href='/warzone'">
-            <img src="imgs/programmer.jpg" alt="Warzone">
+        <div class="card" onclick="window.location.href='/Programacao'">
+            <img src="imgs/programmer.jpg" alt="Programacao">
             <p class="text_games">Programacao</p>
         </div>
 
-        <div class="card" onclick="window.location.href='/fifa'">
-            <img src="imgs/webdesign.avif" alt="Fifa">
+        <div class="card" onclick="window.location.href='/Design'">
+            <img src="imgs/webdesign.avif" alt="Design">
             <p class="text_games">Design</p>
         </div>
     </div>
