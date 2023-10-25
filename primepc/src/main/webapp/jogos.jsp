@@ -22,11 +22,7 @@
             padding: 10px 20px;
         }
 
-        .container {
-            max-width: 100%;
-            margin: 0 auto;
-            padding: 20px;
-        }
+
 
         .categoria {
             font-size: 3rem;

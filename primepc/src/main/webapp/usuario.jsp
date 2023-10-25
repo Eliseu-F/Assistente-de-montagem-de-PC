@@ -19,6 +19,8 @@
             background-position: center;
             background-repeat: no-repeat;
             text-align: center;
+            align-items: center;
+            height: 90vh;
             margin: 0;
             padding: 0;
         }
@@ -28,7 +30,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            height: 80vh;
         }
 
         .buttons {
@@ -56,31 +58,48 @@
 
         h1, p {
             color: #f4f4f4;
+            margin-right: 30px;
         }
 
         header {
-            color: #f4f4f4;
-            padding: 10px;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            margin-left:  2px;
-            position: relative;
-            top: 47px;
-        }
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    background-color: black;
+                    color: white;
+                    padding: 10px 20px;
+                }
 
-        h2, a {
+        h2 {
             color: #f4f4f4;
             text-decoration: none;
         }
+
+        a {
+            font-size: 26px;
+            color: white;
+            text-decoration: none;
+            align-items: right;
+        }
+
+        .links {
+                    display: flex;
+                    font-size: 2rem;
+                     justify-content: space-between;
+                }
+
     </style>
 
 <body>
-<div>
-    <header>
-    <a href="/login.jsp">Sair</a>
-        <h1>Bem-vindo, <%= username %></h1>
+<header>
+
 </header>
+<div>
+
+<header class="header">
+    <h1>Bem-vindo, <%= username %></h1>
+    <a class="sair" href="/login.jsp">Sair</a>
+    </header>
 </div>
     <div class="container">
         <h1>Monte seu PC</h1>

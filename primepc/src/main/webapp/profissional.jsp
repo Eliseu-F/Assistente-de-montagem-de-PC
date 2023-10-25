@@ -4,11 +4,18 @@
 <head>
     <style>
         body {
-            font-size: 16px;
-            margin: 0;
-            padding: 0;
-            background-color: black;
-        }
+                    font-family: Arial, sans-serif;
+                    background-color: #f4f4f4;
+                    background-image: url('imgs/background.svg'); /* Caminho relativo para a imagem */
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    text-align: center;
+                    align-items: center;
+                    height: 90vh;
+                    margin: 0;
+                    padding: 0;
+                }
 
         header {
             display: flex;
