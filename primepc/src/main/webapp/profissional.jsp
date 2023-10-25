@@ -95,11 +95,10 @@
     </div>
 </header>
 <div>
-    <div>
-
+        <h1 class="categoria">
+            Computadores para uso profissional
+        </h1>
     </div>
-
-
 
     <div class="catalog">
         <div class="card" onclick="window.location.href='/especificacao.jsp'">

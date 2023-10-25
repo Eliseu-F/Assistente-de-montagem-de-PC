@@ -6,124 +6,134 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melhores Computadores</title>
     <style>
-        html, body {
-            overflow: hidden;
-        }
-
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
-            background-image: url('imgs/background.png');
+            background-image: url('imgs/background.svg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
             display: flex;
-            flex-direction: column;
-            align-items: center;
             justify-content: center;
-            height: 100vh;
-        }
-
-        .buttons {
-            display: flex;
-        }
-
-        .button {
-            background: transparent;
-            color: #0074D9;
-            border: none;
-            padding: 10px;
-            margin: 10px;
-            border-radius: 5px;
-            text-align: center;
-            text-decoration: none;
-            display: flex;
-            flex-direction: column;
             align-items: center;
-        }
-
-        .button img {
-            max-width: 200px;
-            height: auto;
-        }
-
-        h1, p {
-            color: #f4f4f4;
+            min-height: 100vh;
+            margin: 0;
         }
 
         header {
-            color: #f4f4f4;
-            padding: 10px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .computer-container {
             display: flex;
-            justify-content: flex-end;
+            flex-wrap: wrap;
+            justify-content: center;
             align-items: center;
-            margin-left:  2px;
-            position: relative;
-            top: 50px;
+            margin-top: 80px;
         }
 
-        h2, a {
-            color: #f4f4f4;
+        .computer-card {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 20px;
+            max-width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .computer-card h2 {
+            font-size: 1.5rem;
+            color: #007BFF;
+        }
+
+        .computer-card p {
+            margin: 5px 0;
+        }
+
+        .computer-card a {
             text-decoration: none;
+            color: #007BFF;
         }
-    </style>
-</html>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <style>
-
     </style>
 </head>
 <body>
-<div class="container">
-    <h1>Especificações de Computadores</h1>
-    <div class="computers">
-        <div class="computer">
-            <h2>Nome do Computador 1</h2>
-            <p><strong>Processador:</strong> Processador 1</p>
-            <p><strong>Memória RAM:</strong> 8GB</p>
-            <p><strong>Placa de Vídeo:</strong> NVIDIA GTX 1660</p>
-        </div>
-        <!-- Adicione mais computadores conforme necessário -->
+<header>
+    <h1>Melhores Computadores</h1>
+</header>
+<main>
+    <div class="computer-container">
+        <!-- Informações dos computadores -->
     </div>
-</div>
+</main>
 <script>
-    // Se você tiver dados dinâmicos, pode usar JavaScript para carregá-los e preencher a página.
-    // Exemplo de dados estáticos:
-    const computersData = [
+    const computerContainer = document.querySelector('.computer-container');
+
+    // Dados das especificações dos computadores (exemplos)
+    const computadores = [
         {
-            nome: "Nome do Computador 1",
-            processador: "Processador 1",
-            memoriaRam: "8GB",
-            placaDeVideo: "NVIDIA GTX 1660"
-        },]
-    const computersContainer = document.querySelector(".computers");
+            id: 1,
+            nome: 'PC Gamer 1',
+            processador: 'Intel Core i9-10900K',
+            ram: '32GB DDR4',
+            placaDeVideo: 'NVIDIA RTX 3080',
+            armazenamento: 'SSD de 1TB',
+            sistemaOperacional: 'Windows 10',
+        },
+        {
+            id: 2,
+            nome: 'PC Gamer 2',
+            processador: 'AMD Ryzen 9 5900X',
+            ram: '64GB DDR4',
+            placaDeVideo: 'NVIDIA RTX 3090',
+            armazenamento: 'SSD de 2TB',
+            sistemaOperacional: 'Windows 11',
+        },
+        {
+            id: 3,
+            nome: 'PC Gamer 3',
+            processador: 'Intel Core i7-10700K',
+            ram: '16GB DDR4',
+            placaDeVideo: 'NVIDIA RTX 3070',
+            armazenamento: 'SSD de 512GB + HDD de 1TB',
+            sistemaOperacional: 'Windows 10',
+        },
+    ];
 
-    computersData.forEach((computer) => {
-        const computerDiv = document.createElement("div");
-        computerDiv.classList.add("computer");
+    // Função para criar cartões de computador e anexar informações completas
+    function criarCartoesDeComputador() {
+        computadores.forEach((computador) => {
+            const cartao = document.createElement('div');
+            cartao.classList.add('computer-card');
+            cartao.innerHTML = `
+                    <h2>${computador.nome} </h2>
+                    <p><strong>ID:</strong> ${computador.id} </p>
+                    <p><strong>Processador:</strong> ${computador.processador}</p>
+                    <p><strong>RAM:</strong> ${computador.ram}</p>
+                    <p><strong>Placa de Vídeo:</strong> ${computador.placaDeVideo}</p>
+                    <p><strong>Armazenamento:</strong> ${computador.armazenamento}</p>
+                    <p><strong>Sistema Operacional:</strong> ${computador.sistemaOperacional}</p>
+                `;
+            computerContainer.appendChild(cartao);
+        });
+    }
 
-        computerDiv.innerHTML = `
-                <h2>${computer.nome}</h2>
-                <p><strong>Processador:</strong> ${computer.processador}</p>
-                <p><strong>Memória RAM:</strong> ${computer.memoriaRam}</p>
-                <p><strong>Placa de Vídeo:</strong> ${computer.placaDeVideo}</p>
-            `;
-
-        computersContainer.appendChild(computerDiv);
-    });
+    // Chame a função para criar os cartões de computador
+    criarCartoesDeComputador();
 </script>
 </body>
 </html>
