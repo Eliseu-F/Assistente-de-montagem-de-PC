@@ -203,15 +203,15 @@
             <img src="imgs/fifasvg.svg" alt="Fifa" style="position: relative; z-index: 1;">
             <p class="text_games">Fifa 2023</p>
         </div>
-        <div class="card rpg" onclick="window.location.href='/witcher'">
+        <div class="card rpg" onclick="window.location.href='/especificacao.jsp'">
             <img src="imgs/witcher.svg" alt="The Witcher 3" style="position: relative; z-index: 1;">
             <p class="text_games">The Witcher 3</p>
         </div>
-        <div class="card simulacao" onclick="window.location.href='/thesims'">
+        <div class="card simulacao" onclick="window.location.href='/especificacao.jsp'">
             <img src="imgs/thesims.svg" alt="The sims 4" style="position: relative; z-index: 1;">
             <p class="text_games">The sims 4</p>
         </div>
-        <div class="card puzzle" onclick="window.location.href='/takestwo'">
+        <div class="card puzzle" onclick="window.location.href='/especificacao.jsp'">
             <img src="imgs/takestwo.svg" alt="It Takes Two" style="position: relative; z-index: 1;">
             <p class="text_games">It Takes Two</p>
         </div>

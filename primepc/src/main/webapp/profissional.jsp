@@ -110,19 +110,6 @@
 
     </div>
 
-    <div class="catalog">
-        <div class="card" onclick="window.location.href='/Office'">
-            <img src="imgs/computer.jpg" alt="Office">
-            <p class="text_games">Pacote Office</p>
-        </div>
-
-        <div class="card" onclick="window.location.href='/Programacao'">
-            <img src="imgs/programmer.jpg" alt="Programacao">
-            <p class="text_games">Programacao</p>
-        </div>
-
-        <div class="card" onclick="window.location.href='/Design'">
-            <img src="imgs/webdesign.avif" alt="Design">
 =======
         <h1 class="categoria">
             Computadores para uso profissional
