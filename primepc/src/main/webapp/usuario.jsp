@@ -62,7 +62,7 @@
             align-items: center;
             margin-left:  2px;
             position: relative;
-            top: 50px;
+            top: 47px;
         }
 
         h2, a {
@@ -72,7 +72,7 @@
     </style>
 
 <body>
-<header><a href="/login.jsp">Sair</a></header>
+<div><header><a href="/login.jsp">Sair</a></header></div>
     <div class="container">
         <h1>Monte seu PC</h1>
         <p>Qual a finalidade?</p>

@@ -70,7 +70,11 @@
         .card img {
             width: 100%;
             height: 100%;
+<<<<<<< HEAD
+
+=======
             border-radius: 10%;
+>>>>>>> 0134e74a9ca8c686efc3396dddb5ae5e848b6a62
         }
 
         .card:hover {
@@ -97,11 +101,29 @@
     <h3 class="logo">PrimePC</h3>
     <div class="links">
         <a href="/home">Home</a>
-        <a href="/usuario">Usuario</a>
+        <a href="/usuario.jsp">Usuario</a>
     </div>
 </header>
 <div>
     <div>
+<<<<<<< HEAD
+
+    </div>
+
+    <div class="catalog">
+        <div class="card" onclick="window.location.href='/Office'">
+            <img src="imgs/computer.jpg" alt="Office">
+            <p class="text_games">Pacote Office</p>
+        </div>
+
+        <div class="card" onclick="window.location.href='/Programacao'">
+            <img src="imgs/programmer.jpg" alt="Programacao">
+            <p class="text_games">Programacao</p>
+        </div>
+
+        <div class="card" onclick="window.location.href='/Design'">
+            <img src="imgs/webdesign.avif" alt="Design">
+=======
         <h1 class="categoria">
             Computadores para uso profissional
         </h1>
@@ -120,6 +142,7 @@
 
         <div class="card" onclick="window.location.href='/especificacao.jsp'">
             <img src="imgs/webdesign.avif" alt="Fifa">
+>>>>>>> 0134e74a9ca8c686efc3396dddb5ae5e848b6a62
             <p class="text_games">Design</p>
         </div>
     </div>
