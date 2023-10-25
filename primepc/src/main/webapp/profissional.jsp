@@ -108,17 +108,17 @@
     </div>
 
     <div class="catalog">
-        <div class="card" onclick="window.location.href='/league'">
+        <div class="card" onclick="window.location.href='/especificacao.jsp'">
             <img src="imgs/computer.jpg" alt="League Of Legends">
             <p class="text_games">Pacote Office</p>
         </div>
 
-        <div class="card" onclick="window.location.href='/warzone'">
+        <div class="card" onclick="window.location.href='/especificacao.jsp'">
             <img src="imgs/programmer.jpg" alt="Warzone">
             <p class="text_games">Programacao</p>
         </div>
 
-        <div class="card" onclick="window.location.href='/fifa'">
+        <div class="card" onclick="window.location.href='/especificacao.jsp'">
             <img src="imgs/webdesign.avif" alt="Fifa">
             <p class="text_games">Design</p>
         </div>

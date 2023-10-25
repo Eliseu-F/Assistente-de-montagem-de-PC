@@ -186,17 +186,20 @@
     </div>
     <div class="catalog">
 
-        <div class="card moba" onclick="window.location.href='/league'">
+
+
+        <div class="card moba" onclick="window.location.href='/especificacao.jsp'">
         <img src="imgs/lolsvg.svg" alt="League Of Legends" style="position: relative; z-index: 1">
         <p class="text_games">League Of Legends</p>
         </div>
 
-        <div class="card fps" onclick="window.location.href='/warzone'">
+
+        <div class="card fps" onclick="window.location.href='/especificacao.jsp'">
         <img src="imgs/warzonesvg.svg" alt="Warzone" style="position: relative; z-index: 1">
         <p class="text_games">Warzone</p>
         </div>
 
-        <div class="card esportes" onclick="window.location.href='/fifa'">
+        <div class="card esportes" onclick="window.location.href='/especificacao.jsp'">
             <img src="imgs/fifasvg.svg" alt="Fifa" style="position: relative; z-index: 1;">
             <p class="text_games">Fifa 2023</p>
         </div>
