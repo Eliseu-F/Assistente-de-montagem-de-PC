@@ -81,7 +81,9 @@
     </div>
 </main>
 <script>
+
     const computerContainer = document.querySelector('.computer-container');
+
 
     // Dados das especificações dos computadores (exemplos)
     const computadores = [
@@ -116,25 +118,34 @@
 
     // Função para criar cartões de computador e anexar informações completas
     function criarCartoesDeComputador() {
-        computadores.forEach((computador) => {
+        computadores.map((computador) => {
             const cartao = document.createElement('div');
+
+            console.log(computador.processador)
             cartao.classList.add('computer-card');
-            cartao.innerHTML = `
-                    <h2>${computador.nome} </h2>
-                    <p><strong>ID:</strong> ${computador.id} </p>
-                    <p><strong>Processador:</strong> ${computador.processador}</p>
-                    <p><strong>RAM:</strong> ${computador.ram}</p>
-                    <p><strong>Placa de Vídeo:</strong> ${computador.placaDeVideo}</p>
-                    <p><strong>Armazenamento:</strong> ${computador.armazenamento}</p>
-                    <p><strong>Sistema Operacional:</strong> ${computador.sistemaOperacional}</p>
-                `;
+            cartao.innerHTML =
+
+                "<p><strong>ID:</strong>" + computador.id + "</p>" +
+
+                "<p><strong>Processador:</strong>" + computador.processador + "</p>" +
+
+                "<p><strong>RAM:</strong>" + computador.ram + "</p>" +
+
+                "<p><strong>Placa de Vídeo:</strong>" + computador.placaDeVideo + "</p>" +
+
+                "<p><strong>Armazenamento:</strong>" + computador.armazenamento + "</p>" +
+
+                "<p><strong>Sistema Operacional:</strong>" + computador.sistemaOperacional + "</p>"
+
+            ;
             computerContainer.appendChild(cartao);
         });
     }
 
+
     // Chame a função para criar os cartões de computador
     criarCartoesDeComputador();
+
 </script>
 </body>
 </html>
-
