@@ -111,7 +111,7 @@
             processador: 'Intel Core i7-10700K',
             ram: '16GB DDR4',
             placaDeVideo: 'NVIDIA RTX 3070',
-            armazenamento: 'SSD de 512GB + HDD de 1TB',
+            armazenamento: 'SSD de 512GB',
             sistemaOperacional: 'Windows 10',
         },
     ];
