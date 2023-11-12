@@ -62,8 +62,21 @@
         .error {
             color: red;
         }
+
+        .logo {
+            position: absolute;
+            top: 0;
+            left: 30px;
+            z-index: 1;
+        }
+
     </style>
 </head>
+</header>
+    <a href="/home.jsp">
+        <img src="imgs/logo.svg" class="logo" alt="Logo" style="width: 350px; height: 150px; position: top; z-index: 1">
+    </a>
+</header>
 <body class="container">
 <h2>Login</h2>
 <form action="/login" method="post">
