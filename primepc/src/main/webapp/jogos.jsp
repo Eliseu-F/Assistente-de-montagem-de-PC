@@ -11,6 +11,8 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            height: 90vh;
+            background-color: black;
         }
 
         header {
