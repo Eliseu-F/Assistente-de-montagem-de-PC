@@ -3,6 +3,7 @@
 <head>
     <title>PrimePC - Login</title>
     <style>
+
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
@@ -11,7 +12,12 @@
             background-position: center;
             background-repeat: no-repeat;
             text-align: center;
+            align-items: center;
+            height: 90vh;
+            margin: 0;
+            padding: 0;
         }
+
 
         h2 {
             color: #fff;
@@ -58,7 +64,7 @@
         }
     </style>
 </head>
-<body>
+<body class="container">
 <h2>Login</h2>
 <form action="/login" method="post">
     <label for="username">Usuario:</label>

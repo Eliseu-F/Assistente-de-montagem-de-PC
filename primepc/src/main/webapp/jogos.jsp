@@ -22,11 +22,7 @@
             padding: 10px 20px;
         }
 
-        .container {
-            max-width: 100%;
-            margin: 0 auto;
-            padding: 20px;
-        }
+
 
         .categoria {
             font-size: 3rem;
@@ -186,29 +182,32 @@
     </div>
     <div class="catalog">
 
-        <div class="card moba" onclick="window.location.href='/league'">
+
+
+        <div class="card moba" onclick="window.location.href='/especificacao.jsp'">
         <img src="imgs/lolsvg.svg" alt="League Of Legends" style="position: relative; z-index: 1">
         <p class="text_games">League Of Legends</p>
         </div>
 
-        <div class="card fps" onclick="window.location.href='/warzone'">
+
+        <div class="card fps" onclick="window.location.href='/especificacao.jsp'">
         <img src="imgs/warzonesvg.svg" alt="Warzone" style="position: relative; z-index: 1">
         <p class="text_games">Warzone</p>
         </div>
 
-        <div class="card esportes" onclick="window.location.href='/fifa'">
+        <div class="card esportes" onclick="window.location.href='/especificacao.jsp'">
             <img src="imgs/fifasvg.svg" alt="Fifa" style="position: relative; z-index: 1;">
             <p class="text_games">Fifa 2023</p>
         </div>
-        <div class="card rpg" onclick="window.location.href='/witcher'">
+        <div class="card rpg" onclick="window.location.href='/especificacao.jsp'">
             <img src="imgs/witcher.svg" alt="The Witcher 3" style="position: relative; z-index: 1;">
             <p class="text_games">The Witcher 3</p>
         </div>
-        <div class="card simulacao" onclick="window.location.href='/thesims'">
+        <div class="card simulacao" onclick="window.location.href='/especificacao.jsp'">
             <img src="imgs/thesims.svg" alt="The sims 4" style="position: relative; z-index: 1;">
             <p class="text_games">The sims 4</p>
         </div>
-        <div class="card puzzle" onclick="window.location.href='/takestwo'">
+        <div class="card puzzle" onclick="window.location.href='/especificacao.jsp'">
             <img src="imgs/takestwo.svg" alt="It Takes Two" style="position: relative; z-index: 1;">
             <p class="text_games">It Takes Two</p>
         </div>

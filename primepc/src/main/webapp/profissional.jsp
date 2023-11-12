@@ -4,11 +4,18 @@
 <head>
     <style>
         body {
-            font-size: 16px;
-            margin: 0;
-            padding: 0;
-            background-color: black;
-        }
+                    font-family: Arial, sans-serif;
+                    background-color: #f4f4f4;
+                    background-image: url('imgs/background.svg'); /* Caminho relativo para a imagem */
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    text-align: center;
+                    align-items: center;
+                    height: 90vh;
+                    margin: 0;
+                    padding: 0;
+                }
 
         header {
             display: flex;
@@ -25,13 +32,6 @@
             padding: 20px;
         }
 
-        .categoria {
-            font-size: 3rem;
-            margin-left: 50px;
-            text-align: initial;
-            color: white;
-            padding: 50px;
-        }
 
         .logo {
             font-size: 2rem;
@@ -71,6 +71,7 @@
             width: 100%;
             height: 100%;
             border-radius: 10%;
+
         }
 
         .card:hover {
@@ -97,28 +98,27 @@
     <h3 class="logo">PrimePC</h3>
     <div class="links">
         <a href="/home">Home</a>
-        <a href="/usuario">Usuario</a>
+        <a href="/usuario.jsp">Usuario</a>
     </div>
 </header>
 <div>
-    <div>
         <h1 class="categoria">
             Computadores para uso profissional
         </h1>
     </div>
 
     <div class="catalog">
-        <div class="card" onclick="window.location.href='/league'">
+        <div class="card" onclick="window.location.href='/especificacao.jsp'">
             <img src="imgs/computer.jpg" alt="League Of Legends">
             <p class="text_games">Pacote Office</p>
         </div>
 
-        <div class="card" onclick="window.location.href='/warzone'">
+        <div class="card" onclick="window.location.href='/especificacao.jsp'">
             <img src="imgs/programmer.jpg" alt="Warzone">
             <p class="text_games">Programacao</p>
         </div>
 
-        <div class="card" onclick="window.location.href='/fifa'">
+        <div class="card" onclick="window.location.href='/especificacao.jsp'">
             <img src="imgs/webdesign.avif" alt="Fifa">
             <p class="text_games">Design</p>
         </div>
