@@ -32,8 +32,10 @@
         }
 
         .logo {
-            font-size: 2rem;
-            margin-left: 90px;
+            position: absolute;
+            top: -10px;
+            left: 30px;
+            z-index: 1;
         }
         .container_buttons {
             display: flex;
@@ -117,6 +119,7 @@
 </head>
 
 <body class="container">
+<<<<<<< HEAD:primepc/src/main/webapp/profissional.jsp
     <header class="container_head">
         <h3 class="logo">PrimePC</h3>
         <div class="links">
@@ -129,6 +132,27 @@
             <h1 class="categoria">
                 Categorias
             </h1>
+=======
+<header class="container_head">
+    <a href="/home.jsp">
+        <img src="imgs/logo.svg" class="logo" alt="Logo" style="width: 350px; height: 150px; position: top; z-index: 1">
+    </a>
+    <div class="links">
+        <a href="/home.jsp">Home</a>
+        <a href="/usuario.jsp">Usuario</a>
+    </div>
+</header>
+<div>
+        <h1 class="categoria">
+            Computadores para uso profissional
+        </h1>
+    </div>
+
+    <div class="catalog">
+        <div class="card" onclick="window.location.href='/especificacao.jsp'">
+            <img src="imgs/computer.jpg" alt="League Of Legends">
+            <p class="text_games">Pacote Office</p>
+>>>>>>> fc7c55e513a83296dd2c09e91177c4c0ee2ae920:primepc/src/main/webapp/teste.jsp
         </div>
 
         <div class="container_buttons">

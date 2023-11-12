@@ -87,6 +87,12 @@
                     font-size: 2rem;
                      justify-content: space-between;
                 }
+        .logo {
+            position: absolute;
+            top: 0;
+            left: 30px;
+            z-index: 1;
+        }
 
     </style>
 
@@ -97,6 +103,7 @@
 <div>
 
 <header class="header">
+    <img src="imgs/logo.svg" class="logo" alt="Logo" style="width: 350px; height: 150px; position: top; z-index: 1">
     <h1>Bem-vindo, <%= username %></h1>
     <a class="sair" href="/login.jsp">Sair</a>
     </header>
