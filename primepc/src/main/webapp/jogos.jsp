@@ -33,11 +33,6 @@
             font-family: Roboto;
         }
 
-        .logo {
-            font-size: 2rem;
-            margin-left: 90px;
-        }
-
         .container_buttons {
             display: flex;
             flex-wrap: wrap;
@@ -152,14 +147,22 @@
            /* outline: 1px solid blue;
 
         }
+        .logo {
+            position: absolute;
+            top: 0;
+            left: 30px;
+            z-index: 1;
+        }
+
     </style>
 </head>
-
 <body class="container">
 <header class="container_head">
-    <h3 class="logo">PrimePC</h3>
+    <a href="/home.jsp">
+        <img src="imgs/logo.svg" class="logo" alt="Logo" style="width: 350px; height: 150px; position: top; z-index: 1">
+    </a>
     <div class="links">
-        <a href="/home">Home</a>
+        <a href="/home.jsp">Home</a>
         <a href="/usuario">Usuario</a>
     </div>
 </header>
