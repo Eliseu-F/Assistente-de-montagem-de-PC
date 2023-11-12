@@ -125,7 +125,7 @@
 
         .tipoPC {
             position: absolute;
-            top: 205px;
+            top: 145px;
             left: 205px;
             color: white;
             font-family: "Arial", sans-serif;
@@ -139,6 +139,26 @@
             left: 20px;
             z-index: 1;
         }
+        .buttonLogin{
+            position: absolute;
+            top: -20px;
+            left: 1570px;
+            border-radius: 20px;
+            background-color: #f8f8ff;
+            color: black;
+            padding: 10px 40px;
+            transition: background-color 0.3s ease;
+        }
+        .buttonLogin2{
+            position: absolute;
+            top: -20px;
+            left: 1700px;
+            border-radius: 20px;
+            background-color: #191970;
+            color: white;
+            padding: 10px 40px;
+            transition: background-color 0.3s ease;
+        }
     </style>
 </head>
 
@@ -148,8 +168,8 @@
             <img src="imgs/logo.svg" class="logo" alt="Logo"
                 style="width: 350px; height: 150px; position: absolute; z-index: 1">
         </a>
-        <a href="/login.jsp">Login</a>
-        <a href="/login.jsp">Cadastro</a>
+        <a href="/login.jsp" class="buttonLogin">Login</a>
+        <a href="/login.jsp" class="buttonLogin2">Cadastro</a>
     </header>
     <div class="tipoPC">
         | PC Gamer | PC Profissional |
