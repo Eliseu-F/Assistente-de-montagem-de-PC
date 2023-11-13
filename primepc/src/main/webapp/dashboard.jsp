@@ -12,12 +12,18 @@
         <tr>
             <th>ID</th>
             <th>Name</th>
+            <th>CPU</th>
+            <th>GPU</th>
+            <th>RAM</th>
             <th>Actions</th>
         </tr>
         <c:forEach var="computer" items="${computers}">
             <tr>
                 <td>${computer.id}</td>
                 <td>${computer.name}</td>
+                <td>${computer.cpu}</td>
+                <td>${computer.gpu}</td>
+                <td>${computer.ram}</td>
                 <td>
                     <form action="/delete-computer" method="post">
                         <input type="hidden" id="id" name="id" value="${computer.id}">

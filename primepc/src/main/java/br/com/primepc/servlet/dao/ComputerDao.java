@@ -13,7 +13,7 @@ import java.util.List;
 public class ComputerDao {
     public void createComputer(Computer computer) {
 
-        String SQL = "INSERT INTO COMPUTER (NAME) VALUES (?)";
+        String SQL = "INSERT INTO COMPUTER (NAME, CPU, GPU, RAM) VALUES (?,?,?,?)";
 
         try {
 
@@ -24,6 +24,10 @@ public class ComputerDao {
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
             preparedStatement.setString(1, computer.getName());
+            preparedStatement.setString(2, computer.getCpu());
+            preparedStatement.setString(3, computer.getGpu());
+            preparedStatement.setString(4, computer.getRam());
+
             preparedStatement.execute();
 
             System.out.println("success in insert computer");
@@ -57,8 +61,12 @@ public class ComputerDao {
 
                 String computerId = resultSet.getString("id");
                 String computerName = resultSet.getString("name");
+                String computerCpu = resultSet.getString("cpu");
+                String computerGpu = resultSet.getString("gpu");
+                String computerRam = resultSet.getString("ram");
 
-                Computer computer = new Computer(computerId, computerName);
+
+                Computer computer = new Computer(computerId, computerName, computerCpu, computerGpu, computerRam);
 
                 computers.add(computer);
 
