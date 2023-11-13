@@ -163,7 +163,7 @@
     </a>
     <div class="links">
         <a href="/home.jsp">Home</a>
-        <a href="/usuario">Usuario</a>
+        <a href="/usuario.jsp">Usuario</a>
     </div>
 </header>
 <div>
