@@ -17,8 +17,10 @@ public class RegisterAccountServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         String name = req.getParameter("new-username");
         String password = req.getParameter("new-password");
+        String adminParam = req.getParameter("new-admin");
+        boolean admin = Boolean.parseBoolean(adminParam);
 
-        Account newAccount = new Account(name, password);
+        Account newAccount = new Account(name, password, admin);
         AccountDao accountDao = new AccountDao();
 
         boolean accountCreated = accountDao.createAccount(newAccount);
