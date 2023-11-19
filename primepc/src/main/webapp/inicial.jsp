@@ -169,7 +169,7 @@
                 style="width: 350px; height: 150px; position: absolute; z-index: 1">
         </a>
         <a href="/login.jsp" class="buttonLogin">Login</a>
-        <a href="/login.jsp" class="buttonLogin2">Cadastro</a>
+        <a href="/cadastro.jsp" class="buttonLogin2">Cadastro</a>
     </header>
     <div class="tipoPC">
         | PC Gamer | PC Profissional |

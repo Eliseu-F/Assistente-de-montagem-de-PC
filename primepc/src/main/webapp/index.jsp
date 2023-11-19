@@ -1,5 +1,7 @@
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             font-size: 16px;
@@ -15,8 +17,8 @@
         }
         form {
             max-width: 400px;
-            margin: 20px auto;
-            padding: 20px;
+            margin: 100px auto;
+            padding: 50px;
             border: 1px solid #ccc;
             border-radius: 5px;
             background-color: #f9f9f9;
@@ -58,6 +60,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            font-size: 50px;
         }
         * {
             margin: 0;
@@ -69,9 +72,9 @@
 </head>
 <body>
 <title>PrimePC</title>
-<h2>Create PC</h2>
+<h2>Crie Maquina</h2>
 
-<form action="/create-computer" method="post">
+<form action="/create-computer" method="post" onsubmit="return validateInputs()">
     <div class="input_div">
         <label >Nome da Maquina</label>
         <input class="input_name" type="text" name="computer-name" id="computer-name" value="${param.name}">
@@ -93,8 +96,28 @@
         <button CLASS="button--submit" type="submit">Save</button>
     </div>
 </form>
-<div class="button_div">
-    <button>
-        <a class="button--submit" href="/login.jsp">Logar</a>
-    </button>
-</div>
+
+
+<script>
+    function validateInputs() {
+        const inputs = document.querySelectorAll('.input_name');
+        let allInputsFilled = true;
+
+        for (const input of inputs) {
+            if (!input.value.trim()) {
+                allInputsFilled = false;
+                break;
+            }
+        }
+
+        if (!allInputsFilled) {
+            alert('Por favor, preencha todos os campos obrigatorios.');
+            return false;
+        }
+
+        return true;
+    }
+
+
+</script>
+

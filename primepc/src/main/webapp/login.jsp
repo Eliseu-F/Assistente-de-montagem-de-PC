@@ -4,6 +4,7 @@
     <title>PrimePC - Login</title>
     <style>
 
+
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
@@ -69,12 +70,24 @@
             left: 30px;
             z-index: 1;
         }
+        .buttonLogin2{
+            position: absolute;
+            right: 100px;
+            border-radius: 20px;
+            background-color: #191970;
+            color: white;
+            padding: 10px 40px;
+            transition: background-color 0.3s ease;
+
+        }
+
 
     </style>
 </head>
-</header>
+<header>
     <a href="/home.jsp">
-        <img src="imgs/logo.svg" class="logo" alt="Logo" style="width: 350px; height: 150px; position: top; z-index: 1">
+        <img src="imgs/logo.svg" class="logo" alt="Logo" style="width: 350px; height: 150px; z-index: 1">
+        <a href="/cadastro.jsp" class="buttonLogin2">Cadastro</a>
     </a>
 </header>
 <body class="container">
@@ -88,20 +101,6 @@
     <br>
     <button type="submit">Login</button>
 </form>
-
-<h2>Cadastrar-se</h2>
-<form action="/register" method="post" onsubmit="return validateForm();">
-    <label for="new-username">Usuario:</label>
-    <input type="text" name="new-username" id="new-username">
-    <br>
-    <label for="new-password">Senha:</label>
-    <input type="password" name="new-password" id="new-password">
-    <br>
-    <button type="submit">Cadastrar</button>
-</form>
-
-<div class="error" id="error-message"></div>
-
 <script>
     function validateForm() {
         var username = document.getElementById("new-username").value;
