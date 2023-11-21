@@ -30,7 +30,7 @@ public class Account {
     }
 
     public boolean isAdmin() {
-        return admin;
+        return this.admin;
     }
 
     public void setAdmin(boolean admin) {
