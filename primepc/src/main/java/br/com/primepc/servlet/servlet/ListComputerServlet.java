@@ -24,5 +24,4 @@ public class ListComputerServlet extends HttpServlet {
         req.getRequestDispatcher("dashboard.jsp").forward(req, resp);
 
     }
-
 }

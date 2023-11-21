@@ -22,8 +22,6 @@
             padding: 10px 20px;
         }
 
-
-
         .categoria {
             font-size: 3rem;
             margin-left: 185px;
@@ -172,8 +170,6 @@
             Categorias
         </h1>
     </div>
-
-
         <div class="container_buttons">
             <button class="buttons_games" onclick="filterComputers('all')">TODOS</button>
             <button class="buttons_games" onclick="filterComputers('edicao')">EDICAO DE VIDEO</button>
@@ -186,36 +182,37 @@
         </div>
     <div class="catalog">
 
-
-
-        <div class="card edicao" onclick="window.location.href='/especificacao.jsp'">
+        <div class="card edicao" onclick="redirectToEspecificacao('video')">
         <img src="imgs/profissional/edicao.svg" alt="Edicao de Video" style="position: relative; z-index: 1">
         <p class="text_games">Edicao de Video</p>
         </div>
 
-
-        <div class="card design" onclick="window.location.href='/especificacao.jsp'">
+        <div class="card design" onclick="redirectToEspecificacao('design')">
         <img src="imgs/profissional/design.svg" alt="Design Grafico" style="position: relative; z-index: 1">
         <p class="text_games">Design Grafico</p>
         </div>
 
-        <div class="card software" onclick="window.location.href='/especificacao.jsp'">
+        <div class="card software" onclick="redirectToEspecificacao('software')">
             <img src="imgs/profissional/software.svg" alt="Desenvolvimento de Software" style="position: relative; z-index: 1;">
             <p class="text_games">Desenvolvimento de Software 2023</p>
         </div>
-        <div class="card 3d" onclick="window.location.href='/especificacao.jsp'">
+
+        <div class="card 3d" onclick="redirectToEspecificacao('3d')">
             <img src="imgs/profissional/3d.svg" alt="Reenderizacao 3D" style="position: relative; z-index: 1;">
             <p class="text_games">Reenderizacao 3D</p>
         </div>
-        <div class="card engenharia" onclick="window.location.href='/especificacao.jsp'">
+
+        <div class="card engenharia" onclick="redirectToEspecificacao('engenharia')">
             <img src="imgs/profissional/engenharia.svg" alt="Engenharia" style="position: relative; z-index: 1;">
             <p class="text_games">Engenharia</p>
         </div>
-        <div class="card jogo" onclick="window.location.href='/especificacao.jsp'">
+
+        <div class="card jogo" onclick="redirectToEspecificacao('jogo')">
             <img src="imgs/profissional/jogo.svg" alt="Desenvolvimento de Jogos" style="position: relative; z-index: 1;">
             <p class="text_games">Desenvolvimento de Jogos</p>
         </div>
-        <div class="card financeira" onclick="window.location.href='/especificacao.jsp'">
+
+        <div class="card financeira" onclick="redirectToEspecificacao('financeira')">
             <img src="imgs/profissional/financeiro.svg" alt="Analise Financeira" style="position: relative; z-index: 1;">
             <p class="text_games">Analise Financeira</p>
         </div>
@@ -235,6 +232,11 @@
             }
         });
     }
+
+        function redirectToEspecificacao(gameName) {
+            window.location.href = '/especificacao?nome=' + encodeURIComponent(gameName);
+        }
+
 </script>
 </body>
 
