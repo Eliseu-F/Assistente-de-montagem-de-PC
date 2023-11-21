@@ -143,7 +143,7 @@ public class ComputerDao {
 
     public List<Computer> findByName(String name) {
 
-        String SQL = "SELECT * FROM COMPUTER where name = ?";
+        String SQL = "SELECT * FROM COMPUTER where uso LIKE ?";
 
         try {
 
@@ -152,7 +152,7 @@ public class ComputerDao {
             System.out.println("success in database connection");
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
-            preparedStatement.setString(1, name);
+            preparedStatement.setString(1, "%" + name + "%");
             ResultSet resultSet = preparedStatement.executeQuery();
 
             List<Computer> computers = new ArrayList<>();

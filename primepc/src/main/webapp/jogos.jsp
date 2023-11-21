@@ -198,32 +198,29 @@
     </div>
     <div class="catalog">
 
-
-
-        <div class="card moba" onclick="window.location.href='/especificacao.jsp'">
+        <div class="card moba" onclick="redirectToEspecificacao('league')">
         <img src="imgs/lolsvg.svg" alt="League Of Legends" style="position: relative; z-index: 1">
         <p class="text_games">League Of Legends</p>
         </div>
 
-
-        <div class="card fps" onclick="window.location.href='/especificacao.jsp'">
+        <div class="card fps" onclick="redirectToEspecificacao('warzone')">
         <img src="imgs/warzonesvg.svg" alt="Warzone" style="position: relative; z-index: 1">
         <p class="text_games">Warzone</p>
         </div>
 
-        <div class="card esportes" onclick="window.location.href='/especificacao.jsp'">
+        <div class="card esportes" onclick="redirectToEspecificacao('fifa')">
             <img src="imgs/fifasvg.svg" alt="Fifa" style="position: relative; z-index: 1;">
             <p class="text_games">Fifa 2023</p>
         </div>
-        <div class="card rpg" onclick="window.location.href='/especificacao.jsp'">
+        <div class="card rpg" onclick="redirectToEspecificacao('witcher')">
             <img src="imgs/witcher.svg" alt="The Witcher 3" style="position: relative; z-index: 1;">
             <p class="text_games">The Witcher 3</p>
         </div>
-        <div class="card simulacao" onclick="window.location.href='/especificacao.jsp'">
+        <div class="card simulacao" onclick="redirectToEspecificacao('sims')">
             <img src="imgs/thesims.svg" alt="The sims 4" style="position: relative; z-index: 1;">
             <p class="text_games">The sims 4</p>
         </div>
-        <div class="card puzzle" onclick="window.location.href='/especificacao.jsp'">
+        <div class="card puzzle" onclick="redirectToEspecificacao('take')">
             <img src="imgs/takestwo.svg" alt="It Takes Two" style="position: relative; z-index: 1;">
             <p class="text_games">It Takes Two</p>
         </div>
@@ -242,6 +239,10 @@
                 card.style.display = 'none';
             }
         });
+    }
+
+    function redirectToEspecificacao(gameName) {
+        window.location.href = '/especificacao?nome=' + encodeURIComponent(gameName);
     }
 </script>
 </body>

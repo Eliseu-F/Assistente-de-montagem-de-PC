@@ -136,7 +136,7 @@
         <option value="edicao-de-video">Edicao de vídeo</option>
         <option value="design-grafico">Design grafico</option>
         <option value="desenvolvimento-de-software">Desenvolvimento de software</option>
-        <option value="renderizacao">Renderizacao</option>
+        <option value="3d">Renderizacao</option>
         <option value="engenharia">Engenharia</option>
         <option value="desenvolvimento-de-jogos">Desenvolvimento de jogos</option>
         <option value="analise-financeira">Analise financeira</option>
@@ -150,7 +150,6 @@
         <button CLASS="button--submit" type="submit">Save</button>
     </div>
 </form>
-
 
 <script>
     function validateInputs() {
@@ -171,7 +170,5 @@
 
         return true;
     }
-
-
 </script>
 
