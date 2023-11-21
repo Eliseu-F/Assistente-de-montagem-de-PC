@@ -68,6 +68,8 @@
                     background-color: black;
                     color: white;
                     padding: 10px 20px;
+
+
                 }
 
         h2 {
@@ -79,7 +81,6 @@
             font-size: 26px;
             color: white;
             text-decoration: none;
-            align-items: right;
         }
 
         .links {
@@ -97,15 +98,14 @@
     </style>
 
 <body>
-<header>
 
-</header>
 <div>
 
 <header class="header">
     <img src="imgs/logo.svg" class="logo" alt="Logo" style="width: 350px; height: 150px; position: top; z-index: 1">
     <h1>Bem-vindo, <%= username %></h1>
     <a class="sair" href="/login.jsp">Sair</a>
+    <button id="verificarPermissao">Cadastrar Pc</button>
     </header>
 </div>
     <div class="container">
@@ -124,15 +124,5 @@
     </div>
 </body>
 <script>
-    function redirectToPage(category) {
-        const username = "<%= username %>"; // Obtenha o nome de usuário da sessão
-
-        // Construa o URL da página de destino com o nome de usuário
-        const destinationURL = `/${category}.jsp?username=${username}`;
-
-        // Redirecione o usuário para a página de destino
-        window.location.href = destinationURL;
-    }
 </script>
-
 </html>

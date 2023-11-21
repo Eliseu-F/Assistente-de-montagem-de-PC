@@ -85,6 +85,9 @@
   <br>
   <label for="new-password">Senha:</label>
   <input type="password" name="new-password" id="new-password">
+  <p></p>
+  <input type="radio" name="new-admin" id="new-admin" value="true">Selecione se for Administrador</input>
+  <p></p>
   <br>
   <button type="submit">Cadastrar</button>
 </form>
