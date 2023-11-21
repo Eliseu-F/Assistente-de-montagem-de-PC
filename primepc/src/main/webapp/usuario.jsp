@@ -1,5 +1,11 @@
+<%@ page import="br.com.primepc.servlet.dao.AccountDao" %>
 <%
     String username = (String) session.getAttribute("username");
+%>
+<%
+    // Supondo que você tenha um objeto Usuario com o atributo admin
+    username = AccountDao(username);
+    boolean isAdmin =  username.isAdmin;
 %>
 
 <!DOCTYPE html>
@@ -20,7 +26,7 @@
             background-repeat: no-repeat;
             text-align: center;
             align-items: center;
-            height: 90vh;
+            height: 80vh;
             margin: 0;
             padding: 0;
         }
@@ -30,7 +36,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 80vh;
+            height: 70vh;
         }
 
         .buttons {
@@ -68,8 +74,6 @@
                     background-color: black;
                     color: white;
                     padding: 10px 20px;
-
-
                 }
 
         h2 {
@@ -105,6 +109,27 @@
             transition: background-color 0.3s ease;
         }
 
+        .btnCadastro {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            border-radius: 20px;
+            background-color: #191970;
+            color: white;
+            padding: 2px 8px;
+        }
+
+        .btnSair {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            border-radius: 20px;
+            background-color: #191970;
+            color: white;
+            padding: 2px 8px;
+            left: 40px;
+        }
+
     </style>
 
 <body>
@@ -112,12 +137,22 @@
 <div>
 
 <header class="header">
-    <img src="imgs/logo.svg" class="logo" alt="Logo" style="width: 350px; height: 150px; position: top; z-index: 1">
-    <h1>Bem-vindo, <%= username %></h1>
-    <a class="sair" href="/login.jsp">Sair</a>
-    <a href="/index.jsp" class="buttonCadastrarPC">Cadastro de PC</a>
+
+    <img src="imgs/logo.svg" class="logo" alt="Logo" style="width: 350px; height: 150px; position: absolute; z-index: 1">
+    <h1 class="header">Bem-vindo, <%= username %></h1>
+
+    <header class="header">
+        <% if (isAdmin) { %>
+        <a href="/index.jsp" class="btnCadastro">Cadastro de PC</a>
+        <% } %>
     </header>
+
+    <a class="" href="/login.jsp">Sair</a>
+
+    </header>
+
 </div>
+
     <div class="container">
         <h1>Monte seu PC</h1>
         <p>Qual a finalidade?</p>

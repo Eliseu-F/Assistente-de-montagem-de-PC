@@ -156,7 +156,7 @@
 </head>
 <body class="container">
 <header class="container_head">
-    <a href="/home.jsp">
+    <a href="/usuario.jsp">
         <img src="imgs/logo.svg" class="logo" alt="Logo" style="width: 350px; height: 150px; position: top; z-index: 1">
     </a>
     <div class="links">
