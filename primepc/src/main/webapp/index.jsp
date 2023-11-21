@@ -13,7 +13,6 @@
             background-repeat: no-repeat;
             height: 90vh;
             background-color: black;
-            color: white;
         }
         form {
             max-width: 400px;
@@ -41,6 +40,7 @@
             border-radius: 4px;
         }
         .button_div {
+            margin-top: 20px;
             text-align: center;
         }
         .button--submit {
@@ -65,6 +65,36 @@
         * {
             margin: 0;
             padding: 0;
+        }
+        select {
+            width: 200px;
+            height: 40px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #fff;
+        }
+
+        select option {
+            color: #000;
+            font-size: 16px;
+        }
+
+        select option:hover {
+            background-color: #eee;
+        }
+
+        select option:focus {
+            outline: none;
+        }
+
+        p{
+            color: black;
+            font-weight: bold;
+            font-family: Roboto;
+        }
+        h2{
+            color: white;
         }
         /*outline: 1px solid blue;
 
@@ -92,6 +122,30 @@
         <label>Memoria RAM</label>
         <input class="input_name" type="text" name="computer-ram" id="computer-ram">
     </div>
+    <p>Tipo de uso</p>
+    <input type="radio" name="computer-tipo" id="computer-tipo-gamer" value="gamer" class="radio_txt">Gamer</input>
+    <input type="radio" name="computer-tipo" id="computer-tipo-profissional" value="profissional" class="radio_tx">Profissional</input>
+    <p></p>
+    <select name="uso" id="uso">
+        <option value="league-of-legends">League Of Legends</option>
+        <option value="warzone">Call of Duty</option>
+        <option value="fifa">Fifa</option>
+        <option value="the-witcher">The Witcher</option>
+        <option value="the-sims">The Sims</option>
+        <option value="it-take-two">It Takes Two</option>
+        <option value="edicao-de-video">Edicao de vídeo</option>
+        <option value="design-grafico">Design grafico</option>
+        <option value="desenvolvimento-de-software">Desenvolvimento de software</option>
+        <option value="renderizacao">Renderizacao</option>
+        <option value="engenharia">Engenharia</option>
+        <option value="desenvolvimento-de-jogos">Desenvolvimento de jogos</option>
+        <option value="analise-financeira">Analise financeira</option>
+    </select>
+    <p>Requisitos</p>
+    <select name="computer-desempenho" id="computer-desempenho">
+        <option value="maximo">Maximo</option>
+        <option value="minimo">Minimo</option>
+    </select>
     <div class="button_div">
         <button CLASS="button--submit" type="submit">Save</button>
     </div>

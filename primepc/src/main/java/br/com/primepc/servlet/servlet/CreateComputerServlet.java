@@ -20,8 +20,13 @@
             String computerCpu = req.getParameter("computer-cpu");
             String computerGpu = req.getParameter("computer-gpu");
             String computerRam = req.getParameter("computer-ram");
+            String computerTipo = req.getParameter("computer-tipo");
+            String computerUso = req.getParameter("uso");
+            String computerDesempenho = req.getParameter("computer-desempenho");
+
+
             ComputerDao computerDao = new ComputerDao();
-            Computer computer = new Computer(computerName, computerCpu, computerGpu, computerRam);
+            Computer computer = new Computer(computerName, computerCpu, computerGpu, computerRam, computerTipo, computerUso,computerDesempenho);
 
             if (computerId == "" || computerId == null) {
 

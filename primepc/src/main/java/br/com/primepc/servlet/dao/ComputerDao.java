@@ -13,7 +13,7 @@ import java.util.List;
 public class ComputerDao {
     public void createComputer(Computer computer) {
 
-        String SQL = "INSERT INTO COMPUTER (NAME, CPU, GPU, RAM) VALUES (?,?,?,?)";
+        String SQL = "INSERT INTO COMPUTER (NAME, CPU, GPU, RAM, TIPO, USO, DESEMPENHO) VALUES (?,?,?,?,?,?,?)";
 
         try {
 
@@ -27,10 +27,13 @@ public class ComputerDao {
             preparedStatement.setString(2, computer.getCpu());
             preparedStatement.setString(3, computer.getGpu());
             preparedStatement.setString(4, computer.getRam());
+            preparedStatement.setString(5, computer.getTipo());
+            preparedStatement.setString(6, computer.getUso());
+            preparedStatement.setString(7, computer.getDesempenho());
 
             preparedStatement.execute();
 
-            System.out.println("success in insert computer");
+
 
             connection.close();
 
@@ -64,10 +67,11 @@ public class ComputerDao {
                 String computerCpu = resultSet.getString("cpu");
                 String computerGpu = resultSet.getString("gpu");
                 String computerRam = resultSet.getString("ram");
+                String computerTipo = resultSet.getString("tipo");
+                String computerUso = resultSet.getString("uso");
+                String computerDesempenho = resultSet.getString("desempenho");
 
-
-                Computer computer = new Computer(computerId, computerName, computerCpu, computerGpu, computerRam);
-
+                Computer computer = new Computer(computerId, computerName, computerCpu, computerGpu, computerRam, computerTipo, computerUso, computerDesempenho);
                 computers.add(computer);
 
             }
@@ -85,8 +89,6 @@ public class ComputerDao {
             return Collections.emptyList();
 
         }
-
-
     }
 
     public void deleteComputerById(String computerId) {
