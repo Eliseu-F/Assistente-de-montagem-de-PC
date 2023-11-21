@@ -89,6 +89,106 @@ public class ComputerDao {
             return Collections.emptyList();
 
         }
+
+    }
+
+    public List<Computer> findTypeComputer(String tipo, String uso) {
+
+        String SQL = "SELECT * FROM COMPUTER where tipo = ? and uso = ?";
+
+        try {
+
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+
+            System.out.println("success in database connection");
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            List<Computer> computers = new ArrayList<>();
+
+            while (resultSet.next()) {
+
+                String computerId = resultSet.getString("id");
+                String computerName = resultSet.getString("name");
+                String computerCpu = resultSet.getString("cpu");
+                String computerGpu = resultSet.getString("gpu");
+                String computerRam = resultSet.getString("ram");
+                String computerTipo = resultSet.getString("tipo");
+                String computerUso = resultSet.getString("uso");
+                String computerDesempenho = resultSet.getString("desempenho");
+
+
+                Computer computer = new Computer(computerId, computerName, computerCpu, computerGpu, computerRam, computerTipo, computerUso, computerDesempenho);
+
+                computers.add(computer);
+
+            }
+
+            System.out.println("success in select * computer");
+
+            connection.close();
+
+            return computers;
+
+        } catch (Exception e) {
+
+            System.out.println("fail in database connection");
+
+            return Collections.emptyList();
+
+        }
+    }
+
+    public List<Computer> findByName(String name) {
+
+        String SQL = "SELECT * FROM COMPUTER where name = ?";
+
+        try {
+
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+
+            System.out.println("success in database connection");
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+            preparedStatement.setString(1, name);
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            List<Computer> computers = new ArrayList<>();
+
+            while (resultSet.next()) {
+
+                String computerId = resultSet.getString("id");
+                String computerName = resultSet.getString("name");
+                String computerCpu = resultSet.getString("cpu");
+                String computerGpu = resultSet.getString("gpu");
+                String computerRam = resultSet.getString("ram");
+                String computerTipo = resultSet.getString("tipo");
+                String computerUso = resultSet.getString("uso");
+                String computerDesempenho = resultSet.getString("desempenho");
+
+                Computer computer = new Computer(computerId, computerName, computerCpu, computerGpu, computerRam, computerTipo, computerUso, computerDesempenho);
+
+                computers.add(computer);
+
+            }
+
+            System.out.println("success in select * computer");
+
+            connection.close();
+
+            return computers;
+
+        } catch (Exception e) {
+
+            System.out.println(e);
+            System.out.println("fail in database connection");
+
+            return Collections.emptyList();
+
+        }
+
     }
 
     public void deleteComputerById(String computerId) {
@@ -145,4 +245,8 @@ public class ComputerDao {
         }
 
     }
+
+
+
+
 }
