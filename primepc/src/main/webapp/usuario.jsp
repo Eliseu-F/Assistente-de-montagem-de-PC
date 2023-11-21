@@ -94,6 +94,16 @@
             left: 30px;
             z-index: 1;
         }
+        .buttonCadastrarPC{
+            position: absolute;
+            top: 100px;
+            left: 1650px;
+            border-radius: 25px;
+            background-color: #00af73;
+            color: white;
+            padding: 10px 35px;
+            transition: background-color 0.3s ease;
+        }
 
     </style>
 
@@ -105,7 +115,7 @@
     <img src="imgs/logo.svg" class="logo" alt="Logo" style="width: 350px; height: 150px; position: top; z-index: 1">
     <h1>Bem-vindo, <%= username %></h1>
     <a class="sair" href="/login.jsp">Sair</a>
-    <button id="verificarPermissao">Cadastrar Pc</button>
+    <a href="/index.jsp" class="buttonCadastrarPC">Cadastro de PC</a>
     </header>
 </div>
     <div class="container">
