@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <head>
     <meta charset="UTF-8">
@@ -72,8 +72,11 @@
     <div class="computer-container">
         <c:forEach var="computer" items="${computers}">
             <div class="computer-card">
-                <p><strong>ID:</strong>${computer.id}</p>
-                <p><strong>Processador:</strong>${computer.name}</p>
+                <p><strong>Nome do PC: </strong>${computer.name}</p>
+                <p><strong>Processador: </strong>${computer.cpu}</p>
+                <p><strong>Placa de Video: </strong>${computer.gpu}</p>
+                <p><strong>Memoria RAM: </strong>${computer.ram}</p>
+                <p><strong>Desempenho: </strong>${computer.desempenho}</p>
             </div>
         </c:forEach>
     </div>
