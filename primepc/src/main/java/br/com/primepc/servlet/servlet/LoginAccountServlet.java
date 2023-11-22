@@ -26,7 +26,7 @@ public class LoginAccountServlet extends HttpServlet {
 
         if (isValidCredentials) {
             // Verificar se o usuário é um administrador
-            Usuario usuario = accountDao.validateAdmin(username,password);
+            Usuario usuario = accountDao.validateAdmin(username, password);
             boolean isAdmin = (usuario != null && usuario.isAdmin());
 
             // Configurar informações na sessão
@@ -34,12 +34,11 @@ public class LoginAccountServlet extends HttpServlet {
             session.setAttribute("username", username);
             session.setAttribute("isAdmin", isAdmin);
 
-            // Encaminhar a solicitação para a página usuario.jsp
-            RequestDispatcher dispatcher = req.getRequestDispatcher("/usuario.jsp");
-            try {
-                dispatcher.forward(req, resp);
-            } catch (ServletException e) {
-                throw new RuntimeException(e);
+            // Encaminhar a solicitação para a página apropriada
+            if (isAdmin) {
+                resp.sendRedirect("/find-all-computers");
+            } else {
+                resp.sendRedirect("/usuario.jsp");
             }
         } else {
             // Credenciais inválidas, exibir alerta

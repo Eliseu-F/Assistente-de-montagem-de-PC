@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<head>
+<<head>
     <meta charset="UTF-8">
     <title>Dashboard</title>
 
@@ -16,19 +16,22 @@
             background-repeat: no-repeat;
             height: 90vh;
             background-color: black;
+            font-family: Arial, sans-serif; /* Adicione uma fonte padrão para melhor legibilidade */
         }
 
         div {
-            max-width: 850px;
+            max-width: 90%;
             margin: 20px auto;
             background-color: #fff;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow-x: auto; /* Adicione rolagem horizontal para tabelas grandes */
         }
 
         h1 {
             color: #333;
+            text-align: center; /* Centralize o título */
         }
 
         table {
@@ -52,7 +55,8 @@
         }
 
         form {
-            display: inline-block;
+            display: flex; /* Use flex para alinhar os botões e links */
+            align-items: center;
         }
 
         button {
@@ -62,22 +66,34 @@
             padding: 8px 12px;
             border-radius: 4px;
             cursor: pointer;
+            margin-right: 5px; /* Adicione espaço entre os botões */
         }
 
         button:hover {
             background-color: #c9302c;
         }
 
-        a {
+        a.button {
+            display: inline-block;
             text-decoration: none;
-            color: #337ab7;
+            color: #fff;
+            background-color: #337ab7;
+            padding: 8px 12px;
+            border-radius: 4px;
             margin-left: 5px;
+            transition: background-color 0.3s ease; /* Adiciona uma transição suave na cor de fundo ao passar o mouse */
+        }
+
+        a.button:hover {
+            background-color: #286090; /* Cor alterada ao passar o mouse */
         }
     </style>
 </head>
 <body>
-  <div>
+<div>
     <h1>Computers</h1>
+    <a class="button" href="index.jsp">Cadastrar Novo Computador</a>
+
     <table>
         <tr>
             <th>ID</th>
@@ -89,7 +105,6 @@
             <th>Jogo</th>
             <th>Desempenho</th>
             <th>Actions</th>
-
         </tr>
         <c:forEach var="computer" items="${computers}">
             <tr>
@@ -105,13 +120,12 @@
                     <form action="/delete-computer" method="post">
                         <input type="hidden" id="id" name="id" value="${computer.id}">
                         <button type="submit">Delete</button>
-                        <span> | </span>
-                        <a href="index.jsp?id=${computer.id}&name=${computer.name}">Update</a>
                     </form>
+                    <a href="index.jsp?id=${computer.id}&name=${computer.name}">Update</a>
                 </td>
             </tr>
         </c:forEach>
     </table>
-  </div>
+</div>
 </body>
 </html>

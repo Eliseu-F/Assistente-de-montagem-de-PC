@@ -4,7 +4,6 @@ public class Account {
 
     private String name;
     private String password;
-
     private boolean admin;
 
     public Account(String name, String password, boolean admin) {
