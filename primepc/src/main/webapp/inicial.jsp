@@ -164,7 +164,7 @@
 
 <body class="container">
     <header class="container_head">
-        <a href="/home.jsp">
+        <a>
             <img src="imgs/logo.svg" class="logo" alt="Logo"
                 style="width: 350px; height: 150px; position: absolute; z-index: 1">
         </a>
