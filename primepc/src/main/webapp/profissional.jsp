@@ -75,9 +75,8 @@
             transition: transform 0.2s;
             margin-right: 150px;
             position: relative;
-
-
         }
+
         .card.moba{
             display: block;
         }
@@ -159,13 +158,11 @@
 </head>
 <body class="container">
 <header class="container_head">
-    <a href="/home.jsp">
-        <img src="imgs/logo.svg" class="logo" alt="Logo" style="width: 350px; height: 150px; position: top; z-index: 1">
+    <a href="/usuario.jsp">
+        <img src="imgs/logo.svg" class="logo" alt="Logo" style="width: 350px; height: 150px; position: absolute; z-index: 1">
     </a>
     <div class="links">
-        <a href="/home.jsp">Home</a>
-        <a  class="img" href="/usuario.jsp">
-        <img src="imgs/usuario.svg"style="width: 100px; height: 80px;  z-index: 1" >
+        <a href="/usuario.jsp">Home</a>
         </a>
     </div>
 </header>

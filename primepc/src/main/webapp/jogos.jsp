@@ -1,17 +1,19 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            font-size: 16px;
-            margin: 0;
-            padding: 0;
-            background-image: url('imgs/background.svg');
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            background-image: url('imgs/background.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            height: 90vh;
-            background-color: black;
+            margin: 0;
+            padding: 0;
         }
 
         header {
@@ -22,8 +24,6 @@
             color: white;
             padding: 10px 20px;
         }
-
-
 
         .categoria {
             font-size: 3rem;
@@ -50,10 +50,11 @@
             font-size: 1.2rem;
             color: #000FA6;
             font-family: Bahnschrift;
-            margin-right: 90px;
+            margin: 0px 15px 0px 15px;
         }
 
         .links {
+            margin-top: 20px;
             display: flex;
             font-size: 2rem;
         }
@@ -62,6 +63,7 @@
             color: white;
             margin-right: 20px;
             text-decoration: none;
+            margin-top: 20px;
         }
 
         .card {
@@ -75,25 +77,29 @@
             transition: transform 0.2s;
             margin-right: 150px;
             position: relative;
+        }
 
+        .card.moba {
+            display: block;
+        }
 
-        }
-        .card.moba{
+        .card.esportes {
             display: block;
         }
-        .card.esportes{
+
+        .card.fps {
             display: block;
         }
-        .card.fps{
+
+        .card.rpg {
             display: block;
         }
-        .card.rpg{
+
+        .card.simulacao {
             display: block;
         }
-        .card.simulacao{
-            display: block;
-        }
-        .card.puzzle{
+
+        .card.puzzle {
             display: block;
         }
 
@@ -107,14 +113,16 @@
         .card:hover {
             transform: scale(1.05);
         }
-        .text_games{
+
+        .text_games {
             text-align: initial;
             color: white;
             font-weight: bold;
             margin-left: 40px;
 
         }
-        .catalog{
+
+        .catalog {
             margin-top: 100px;
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -142,39 +150,22 @@
         ::-webkit-scrollbar-button {
             display: none;
         }
-        * {
-            margin: 0;
-            padding: 0;
-           /* outline: 1px solid blue;
-
-        }
         .logo {
             position: absolute;
             top: 0;
             left: 30px;
             z-index: 1;
         }
-        .home {
-            position: absolute;
-            top: 145px;
-            left: 205px;
-            color: black;
-            font-family: "Arial", sans-serif;
-            font-size: 25px;
-            letter-spacing: 3px;
-        }
 
     </style>
 </head>
 <body class="container">
 <header class="container_head">
-    <a href="/home.jsp">
-        <img src="imgs/logo.svg" class="logo" alt="Logo" style="width: 350px; height: 150px; position: top; z-index: 1">
+    <a href="/usuario.jsp">
+        <img src="imgs/logo.svg" class="logo" alt="Logo" style="width: 350px; height: 150px; position: absolute; z-index: 1">
     </a>
     <div class="links">
-        <a href="/home.jsp" style="position: absolute; top: 65; left: 1625px; z-index: 1; color: #fff; font-size: 35px;" >Home</a>
-        <a href="/usuario.jsp">
-            <img src="imgs/usuario.svg" class="logo" alt="Logo" style="width: 150px; height: 80px; position: top; z-index: 1">
+        <a href="/usuario.jsp">Home</a>
         </a>
     </div>
 </header>
@@ -198,13 +189,13 @@
     <div class="catalog">
 
         <div class="card moba" onclick="redirectToEspecificacao('league')">
-        <img src="imgs/lolsvg.svg" alt="League Of Legends" style="position: relative; z-index: 1">
-        <p class="text_games">League Of Legends</p>
+            <img src="imgs/lolsvg.svg" alt="League Of Legends" style="position: relative; z-index: 1">
+            <p class="text_games">League Of Legends</p>
         </div>
 
         <div class="card fps" onclick="redirectToEspecificacao('warzone')">
-        <img src="imgs/warzonesvg.svg" alt="Warzone" style="position: relative; z-index: 1">
-        <p class="text_games">Warzone</p>
+            <img src="imgs/warzonesvg.svg" alt="Warzone" style="position: relative; z-index: 1">
+            <p class="text_games">Warzone</p>
         </div>
 
         <div class="card esportes" onclick="redirectToEspecificacao('fifa')">
@@ -225,7 +216,7 @@
         </div>
 
     </div>
-    </div>
+</div>
 </div>
 <script>
     function filterGames(category) {

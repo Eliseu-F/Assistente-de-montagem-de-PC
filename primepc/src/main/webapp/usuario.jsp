@@ -1,6 +1,3 @@
-<%@ page import="br.com.primepc.servlet.dao.AccountDao" %>
-<%@ page import="br.com.primepc.servlet.model.Usuario" %>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -249,10 +246,6 @@
 
         <h1 class="header">Bem-vindo, <%= username %>
         </h1>
-        <a href="logar.jsp">Cadastrar</a>
-        <p></p>
-
-
 
         <a class="" href="/login.jsp">Sair</a>
 
