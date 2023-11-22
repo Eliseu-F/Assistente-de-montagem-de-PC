@@ -26,7 +26,6 @@
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 20px;
             position: fixed;
             top: 0;
             width: 100%;
@@ -81,9 +80,10 @@
         }
         .buttonLogin2{
 
-            display: block;
-            height: auto;
-            width: 50px;
+            position: absolute;
+            top: 25px;
+            left: 30px;
+            z-index: 1;
 
 
 
