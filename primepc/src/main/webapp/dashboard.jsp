@@ -19,7 +19,7 @@
         }
 
         div {
-            max-width: 800px;
+            max-width: 850px;
             margin: 20px auto;
             background-color: #fff;
             padding: 20px;
@@ -85,7 +85,11 @@
             <th>CPU</th>
             <th>GPU</th>
             <th>RAM</th>
+            <th>Uso</th>
+            <th>Jogo</th>
+            <th>Desempenho</th>
             <th>Actions</th>
+
         </tr>
         <c:forEach var="computer" items="${computers}">
             <tr>
@@ -94,6 +98,9 @@
                 <td>${computer.cpu}</td>
                 <td>${computer.gpu}</td>
                 <td>${computer.ram}</td>
+                <td>${computer.tipo}</td>
+                <td>${computer.uso}</td>
+                <td>${computer.desempenho}</td>
                 <td>
                     <form action="/delete-computer" method="post">
                         <input type="hidden" id="id" name="id" value="${computer.id}">
