@@ -53,6 +53,17 @@
             border-radius: 4px;
             cursor: pointer;
         }
+        .button--cancel {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: red;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+        }
         .button--submit:hover {
             background-color: #45a049;
         }
@@ -67,7 +78,7 @@
             padding: 0;
         }
         select {
-            width: 200px;
+            width: 100%;
             height: 40px;
             border: 1px solid #ccc;
             border-radius: 5px;
@@ -147,7 +158,8 @@
         <option value="minimo">Minimo</option>
     </select>
     <div class="button_div">
-        <button CLASS="button--submit" type="submit">Save</button>
+        <button CLASS="button--submit" type="submit">Salvar</button>
+        <a class="button--cancel" href="find-all-computers">Cancelar</a>
     </div>
 </form>
 
