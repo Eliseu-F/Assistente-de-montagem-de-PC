@@ -223,6 +223,12 @@
             left: 40px;
 
         }
+        .logo {
+            position: absolute;
+            top: 0;
+            left: 30px;
+            z-index: 1;
+        }
 
 
     </style>
@@ -241,8 +247,9 @@
     <header class="header">
 
 
-        <img src="imgs/logo.svg" class="logo" alt="Logo"
-             style="width: 350px; height: 150px; position: absolute; z-index: 1">
+        <a href="/home.jsp">
+            <img src="imgs/logo.svg" class="logo" alt="Logo" style="width: 350px; height: 150px; position: absolute; z-index: 1">
+        </a>
 
         <h1 class="header">Bem-vindo, <%= username %>
         </h1>

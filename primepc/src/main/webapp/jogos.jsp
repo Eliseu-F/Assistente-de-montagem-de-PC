@@ -156,17 +156,25 @@
             left: 30px;
             z-index: 1;
         }
+        .usuario {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            top: 30px;
+            left: 1800px;
+            z-index: 1;
+        }
 
     </style>
 </head>
 <body class="container">
 <header class="container_head">
-    <a href="/usuario.jsp">
+    <a href="/home.jsp">
         <img src="imgs/logo.svg" class="logo" alt="Logo" style="width: 350px; height: 150px; position: absolute; z-index: 1">
     </a>
-    <div class="links">
-        <a href="/usuario.jsp">Home</a>
-        </a>
+    <a href="/usuario.jsp">
+        <img src="imgs/usuario.svg" class="usuario" alt="Logo">
+    </a>
     </div>
 </header>
 <div>

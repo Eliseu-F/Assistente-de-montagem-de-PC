@@ -323,9 +323,9 @@
                 <span>Mundo dos games</span>
             </div>
             <div class="content">
-                <span class="title">Worlds 2023: T1 atropela Weibo e é tetracampeã mundial de LoL</span>
+                <span class="title">Worlds 2023: T1 atropela Weibo e e tetracampea mundial de LoL</span>
                 <p class="desc">
-                    A T1 é a grande campeã do Worlds 2023, o Mundial de League of Legends. A equipe, que atropelou a Weibo Gaming neste domingo (19) por 3x0, cravou seu quarto título e se isolou como a maior vencedora da história. O midlaner sul-coreano Lee "Faker" Sang-hyeok, agora é oficialmente o maior vencedor de mundiais na história da modalidade.
+                    A T1 e a grande campea do Worlds 2023, o Mundial de League of Legends. A equipe, que atropelou a Weibo Gaming neste domingo (19) por 3x0, cravou seu quarto titulo e se isolou como a maior vencedora da historia. O midlaner sul-coreano Lee "Faker" Sang-hyeok, agora e oficialmente o maior vencedor de mundiais na historia da modalidade.
                 </p>
             </div>
             <div class="arrow">
@@ -339,9 +339,9 @@
             <div class="content">
                 <span class="title">Quanto pagar em placa de vídeo na Black Friday? Veja um guia</span>
                 <p class="desc">
-                     Muitos aproveitam para montar seus PCs ou dar upgrades nos seus computadores durante a Black Friday, inclusive suas placas de vídeo. No entanto, com muitas opções para escolher, é bom ter um guia para saber se as promoções valem a pena ou não.
+                    Muitos aproveitam para montar seus PCs ou dar upgrades nos seus computadores durante a Black Friday, inclusive suas placas de video. No entanto, com muitas opcoes para escolher, e bom ter um guia para saber se as promocoes valem a pena ou nao.
 
-                     Acompanhe a tabela completa montada pela tecmundo brasil como guia de promoções: https://www.tecmundo.com.br/produto/274025-pagar-placa-video-black-friday-veja-guia-precos.htm.
+                    Acompanhe a tabela completa montada pela tecmundo brasil como guia de promocoes: https://www.tecmundo.com.br/produto/274025-pagar-placa-video-black-friday-veja-guia-precos.htm.
                 </p>
             </div>
             <div class="arrow">
