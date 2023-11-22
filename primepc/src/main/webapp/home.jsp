@@ -304,6 +304,7 @@
     <nav>
         <a href="/home.jsp" style="color: #696969;">Home</a>
         <a href="/jogos.jsp">Jogos</a>
+        <a href="/profissional.jsp">Profissional</a>
         <a href="/inicial.jsp">Sair</a>
     </nav>
 

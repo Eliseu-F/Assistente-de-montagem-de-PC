@@ -52,6 +52,7 @@
         }
 
         .links {
+            margin-top: 20px;
             display: flex;
             font-size: 2rem;
         }
@@ -60,6 +61,7 @@
             color: white;
             margin-right: 20px;
             text-decoration: none;
+            margin-top: 20px;
         }
 
         .card {
@@ -140,29 +142,31 @@
         ::-webkit-scrollbar-button {
             display: none;
         }
-        * {
-            margin: 0;
-            padding: 0;
-           /* outline: 1px solid blue;
 
-        }
         .logo {
             position: absolute;
             top: 0;
             left: 30px;
             z-index: 1;
         }
+        .img{
+            margin-right: 20px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
 
     </style>
 </head>
 <body class="container">
 <header class="container_head">
-    <a href="/usuario.jsp">
+    <a href="/home.jsp">
         <img src="imgs/logo.svg" class="logo" alt="Logo" style="width: 350px; height: 150px; position: top; z-index: 1">
     </a>
     <div class="links">
         <a href="/home.jsp">Home</a>
-        <a href="/usuario">Usuario</a>
+        <a  class="img" href="/usuario.jsp">
+        <img src="imgs/usuario.svg"style="width: 100px; height: 80px;  z-index: 1" >
+        </a>
     </div>
 </header>
 <div>
@@ -237,6 +241,7 @@
         function redirectToEspecificacao(gameName) {
             window.location.href = '/especificacao?nome=' + encodeURIComponent(gameName);
         }
+
 
 </script>
 </body>

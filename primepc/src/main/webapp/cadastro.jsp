@@ -69,12 +69,23 @@
       left: 30px;
       z-index: 1;
     }
+    .buttonLogin2{
+      position: absolute;
+      right: 100px;
+      border-radius: 20px;
+      background-color: #191970;
+      color: white;
+      padding: 10px 40px;
+      transition: background-color 0.3s ease;
+
+    }
 
   </style>
 </head>
 </header>
 <a>
   <img src="imgs/logo.svg" class="logo" alt="Logo" style="width: 350px; height: 150px; z-index: 1">
+  <a href="/login.jsp" class="buttonLogin2">Login</a>
 </a>
 </header>
 <body class="container">
@@ -87,7 +98,7 @@
   <input type="password" name="new-password" id="new-password">
   <p></p>
 
-  <form action"usuario.jsp" method="post">
+  <form action="usuario.jsp" method="post">
   <input type="radio" name="new-admin" id="new-admin" value="true">Selecione se for Administrador</input>
 
   <p></p>
