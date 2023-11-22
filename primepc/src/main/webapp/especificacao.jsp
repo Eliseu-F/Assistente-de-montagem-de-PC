@@ -31,36 +31,52 @@
             width: 100%;
         }
 
+        main {
+            margin-top: 120px; /* Aumentei a margem para evitar sobreposição com o cabeçalho fixo */
+        }
+
         .computer-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            margin-top: 80px;
         }
 
         .computer-card {
-            background-color: #fff;
+            background-color: #ffffff;
             border: 1px solid #ccc;
-            border-radius: 5px;
-            margin: 10px;
+            border-radius: 10px;
+            margin: 20px;
             padding: 20px;
             max-width: 300px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .computer-card:hover {
+            transform: scale(1.05);
         }
 
         .computer-card h2 {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             color: #007BFF;
+            margin-bottom: 10px;
         }
 
         .computer-card p {
-            margin: 5px 0;
+            margin: 10px 0;
+            text-align: left;
+        }
+
+        .computer-card strong {
+            color: #333;
         }
 
         .computer-card a {
             text-decoration: none;
             color: #007BFF;
+            display: block;
+            margin-top: 10px;
         }
     </style>
 </head>
