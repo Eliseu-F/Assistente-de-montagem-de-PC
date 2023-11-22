@@ -59,7 +59,7 @@
             align-items: center;
         }
 
-        button {
+        .botao-deletar {
             background-color: #d9534f;
             color: #fff;
             border: none;
@@ -68,6 +68,19 @@
             cursor: pointer;
             margin-right: 5px; /* Adicione espaço entre os botões */
         }
+
+        .botao-atualizar {
+            background-color: #228B22;
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 5px;
+            text-decoration: none;
+        }
+
+
 
         button:hover {
             background-color: #c9302c;
@@ -91,20 +104,20 @@
 </head>
 <body>
 <div>
-    <h1>Computers</h1>
+    <h1>Computadores</h1>
     <a class="button" href="index.jsp">Cadastrar Novo Computador</a>
 
     <table>
         <tr>
             <th>ID</th>
-            <th>Name</th>
-            <th>CPU</th>
-            <th>GPU</th>
-            <th>RAM</th>
+            <th>Nome</th>
+            <th>Processador</th>
+            <th>Placa de Video</th>
+            <th>Memoria RAM</th>
             <th>Uso</th>
             <th>Jogo</th>
             <th>Desempenho</th>
-            <th>Actions</th>
+            <th>Gerenciar</th>
         </tr>
         <c:forEach var="computer" items="${computers}">
             <tr>
@@ -118,10 +131,11 @@
                 <td>${computer.desempenho}</td>
                 <td>
                     <form action="/delete-computer" method="post">
+                        <a class="botao-atualizar" href="index.jsp?id=${computer.id}&name=${computer.name}">Atualizar</a>
                         <input type="hidden" id="id" name="id" value="${computer.id}">
-                        <button type="submit">Delete</button>
+                        <button class="botao-deletar" type="submit">Deletar</button>
                     </form>
-                    <a href="index.jsp?id=${computer.id}&name=${computer.name}">Update</a>
+
                 </td>
             </tr>
         </c:forEach>
