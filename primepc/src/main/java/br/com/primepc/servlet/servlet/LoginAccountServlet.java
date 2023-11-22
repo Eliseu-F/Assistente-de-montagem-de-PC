@@ -1,6 +1,7 @@
 package br.com.primepc.servlet.servlet;
 
 import br.com.primepc.servlet.dao.AccountDao;
+import br.com.primepc.servlet.model.Usuario;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -10,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+
 
 @WebServlet("/login")
 public class LoginAccountServlet extends HttpServlet {
@@ -23,9 +25,14 @@ public class LoginAccountServlet extends HttpServlet {
         boolean isValidCredentials = accountDao.validateUserCredentials(username, password);
 
         if (isValidCredentials) {
-            // Configurar o nome de usuário na sessão
+            // Verificar se o usuário é um administrador
+            Usuario usuario = accountDao.validateAdmin(username,password);
+            boolean isAdmin = (usuario != null && usuario.isAdmin());
+
+            // Configurar informações na sessão
             HttpSession session = req.getSession();
             session.setAttribute("username", username);
+            session.setAttribute("isAdmin", isAdmin);
 
             // Encaminhar a solicitação para a página usuario.jsp
             RequestDispatcher dispatcher = req.getRequestDispatcher("/usuario.jsp");

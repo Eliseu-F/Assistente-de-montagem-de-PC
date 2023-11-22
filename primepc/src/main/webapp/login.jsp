@@ -85,7 +85,7 @@
     </style>
 </head>
 <header>
-    <a href="/home.jsp">
+    <a>
         <img src="imgs/logo.svg" class="logo" alt="Logo" style="width: 350px; height: 150px; z-index: 1">
         <a href="/cadastro.jsp" class="buttonLogin2">Cadastro</a>
     </a>

@@ -235,17 +235,6 @@
     String username = (String) session.getAttribute("username");
 %>
 
-<%
-    AccountDao accountDao = new AccountDao();
-
-    // Obtenha o usuário e verifique se é um administrador
-    Usuario usuario = accountDao.validateAdmin(username);
-
-    String[] isAdminValues = request.getParameterValues("new-admin");
-        boolean isAdmin = (isAdminValues != null && isAdminValues.length > 0 && "true".equals(isAdminValues[0]));
-
-%>
-
 <body>
 
 
@@ -260,19 +249,10 @@
 
         <h1 class="header">Bem-vindo, <%= username %>
         </h1>
+        <a href="logar.jsp">Cadastrar</a>
+        <p></p>
 
 
-        <header class="header">
-
-            <% if (isAdmin) { %>
-                <!-- Se o usuário for um administrador, mostre o botão de cadastro -->
-                <a href="/index.jsp" class="btnCadastro">Cadastro de PC</a>
-            <% } else { %>
-                <!-- Caso contrário, faça algo diferente ou não mostre nada -->
-                <p>Usuario nao e administrador.</p>
-            <% } %>
-
-        </header>
 
         <a class="" href="/login.jsp">Sair</a>
 

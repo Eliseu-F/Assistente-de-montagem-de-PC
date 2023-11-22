@@ -22,6 +22,7 @@
         }
 
         header {
+            justify-content: space-between;
             background-color: #333;
             color: white;
             text-align: center;
@@ -78,11 +79,28 @@
             display: block;
             margin-top: 10px;
         }
+        .buttonLogin2{
+
+            display: block;
+            height: auto;
+            width: 50px;
+
+
+
+            border-radius: 20px;
+            background-color: #191970;
+            color: white;
+            padding: 10px 40px;
+            transition: background-color 0.3s ease;
+
+        }
     </style>
 </head>
 <body>
 <header>
     <h1>Melhores Computadores</h1>
+    <a href="#"  class="buttonLogin2" onclick="voltar()">Voltar</a>
+
 </header>
 <main>
     <div class="computer-container">
@@ -97,6 +115,10 @@
         </c:forEach>
     </div>
 </main>
-
+<script>
+    function voltar() {
+        window.history.back();
+    }
+</script>
 </body>
 </html>

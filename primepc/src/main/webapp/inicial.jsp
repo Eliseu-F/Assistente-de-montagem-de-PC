@@ -17,7 +17,6 @@
             padding: 0;
         }
 
-
         header {
             color: #f4f4f4;
             padding: 10px;
@@ -97,7 +96,7 @@
 
         .games {
             position: absolute;
-            top: 100px;
+            top: 280px;
             left: 80px;
             z-index: 1;
         }
@@ -105,23 +104,23 @@
         .texto {
             position: absolute;
             top: 250px;
-            left: 850px;
+            left: 1205px;
             color: white;
             padding: 0;
             text-align: right;
             font-family: "Roboto", bold;
-            font-size: 70px;
+            font-size: 95px;
         }
 
         .texto2 {
             position: absolute;
-            top: 500px;
-            left: 850px;
+            top: 600px;
+            left: 1225px;
             color: white;
             padding: 0;
             text-align: left;
             font-family: "Roboto", bold;
-            font-size: 25px;
+            font-size: 30px;
         }
 
         .tipoPC {
@@ -141,6 +140,7 @@
             z-index: 1;
         }
         .buttonLogin{
+            position: absolute;
             top: -20px;
             left: 1570px;
             border-radius: 20px;
@@ -148,9 +148,9 @@
             color: black;
             padding: 10px 40px;
             transition: background-color 0.3s ease;
-
         }
         .buttonLogin2{
+            position: absolute;
             top: -20px;
             left: 1700px;
             border-radius: 20px;
@@ -164,7 +164,7 @@
 
 <body class="container">
     <header class="container_head">
-        <a href="/home.jsp">
+        <a>
             <img src="imgs/logo.svg" class="logo" alt="Logo"
                 style="width: 350px; height: 150px; position: absolute; z-index: 1">
         </a>
@@ -183,7 +183,7 @@
     </div>
     <div class="pcgamer-container">
         <img src="imgs/games.svg" class="games" alt="Opções de computadores"
-            style="position: absolute; bottom: 15%; left: 18x; width:45%; height: 650px; z-index: 1">
+            style="bottom: 15%; left: 16px; width:60%; height: 650px; position: absolute; z-index: 1">
     </div>
 </body>
 
