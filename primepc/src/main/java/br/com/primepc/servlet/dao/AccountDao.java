@@ -1,6 +1,7 @@
     package br.com.primepc.servlet.dao;
 
     import br.com.primepc.servlet.model.Account;
+    import br.com.primepc.servlet.model.Usuario;
 
     import java.sql.Connection;
     import java.sql.DriverManager;
@@ -77,33 +78,62 @@
                 return false;
             }
         }
-        public boolean validateAdmin(String username) {
+        public Usuario validateAdmin(String username) {
+
             String SQL_SELECT = "SELECT COUNT(*) FROM ACCOUNT WHERE NAME = ?  AND ADMIN = TRUE";
 
+
+
             try {
+
                 Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+
                 System.out.println("Success in database connection");
 
+
+
                 // Verifique se o nome de usuário, senha e o atributo admin correspondem a uma entrada na tabela
+
                 PreparedStatement selectStatement = connection.prepareStatement(SQL_SELECT);
+
                 selectStatement.setString(1, username);
+
                 ResultSet resultSet = selectStatement.executeQuery();
 
-                if (resultSet.next() && resultSet.getInt(1) > 0) {
+
+
+                if (resultSet.next()) {
+
                     // As credenciais do usuário são válidas e ele é um administrador
-                    System.out.println("User credentials are valid and user is an admin.");
+
+                    Usuario usuario = new Usuario();
+
+                    usuario.setUsername(resultSet.getString("NAME"));
+
+                    usuario.setAdmin(resultSet.getBoolean("ADMIN"));
+
                     connection.close();
-                    return true;
+
+                    return usuario;
+
                 } else {
+
                     // As credenciais do usuário não são válidas ou ele não é um administrador
+
                     System.out.println("Invalid user credentials or user is not an admin.");
+
                     connection.close();
-                    return false;
+
+                    return null; // Retorna null se o usuário não for encontrado
+
                 }
 
             } catch (Exception e) {
+
                 System.out.println("Fail in database connection");
-                return false;
+
+                return null; // Retorna null em caso de falha na conexão ou exceção
+
             }
         }
     }

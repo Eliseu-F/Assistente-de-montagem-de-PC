@@ -14,7 +14,7 @@
             background-repeat: no-repeat;
             text-align: center;
             align-items: center;
-            height: 90vh;
+            height: 95vh;
             margin: 0;
             padding: 0;
         }

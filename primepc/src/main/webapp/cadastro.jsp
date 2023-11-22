@@ -13,7 +13,7 @@
       background-repeat: no-repeat;
       text-align: center;
       align-items: center;
-      height: 90vh;
+      height: 95vh;
       margin: 0;
       padding: 0;
     }
@@ -86,7 +86,10 @@
   <label for="new-password">Senha:</label>
   <input type="password" name="new-password" id="new-password">
   <p></p>
+
+  <form action"usuario.jsp" method="post">
   <input type="radio" name="new-admin" id="new-admin" value="true">Selecione se for Administrador</input>
+
   <p></p>
   <br>
   <button type="submit">Cadastrar</button>

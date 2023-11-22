@@ -4,13 +4,14 @@
 <head>
     <style>
         body {
-            font-size: 16px;
-            margin: 0;
-            padding: 0;
-            background-image: url('imgs/background.svg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+                        background-color: #f4f4f4;
+                        background-image: url('imgs/background.png');
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        margin: 0;
+                        padding: 0;
         }
 
         header {
@@ -156,7 +157,7 @@
 </head>
 <body class="container">
 <header class="container_head">
-    <a href="/home.jsp">
+    <a href="/usuario.jsp">
         <img src="imgs/logo.svg" class="logo" alt="Logo" style="width: 350px; height: 150px; position: top; z-index: 1">
     </a>
     <div class="links">

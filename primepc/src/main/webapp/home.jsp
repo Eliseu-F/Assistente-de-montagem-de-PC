@@ -45,7 +45,7 @@
             margin-top: 30px;
             text-align: right;
             color: white;
-            padding: 50px;
+            padding: 40px;
             font-family: Roboto;
         }
 
@@ -189,7 +189,7 @@
             font-size: 26px;
             color: white;
             text-decoration: none;
-            align-items: right;
+
         }
 
         .links a:first-child {
@@ -331,7 +331,7 @@
                 <span>&#8673;</span>
             </div>
         </div>
-        <div class="card">
+        <div class="card" href="/jogos.jsp">
             <div class="img img2">
                 <span>Computadores</span>
             </div>
