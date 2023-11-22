@@ -102,7 +102,7 @@
 </head>
 <body>
 <title>PrimePC</title>
-<h2>Crie Maquina</h2>
+<h2>Adicione uma maquina</h2>
 
 <form action="/create-computer" method="post" onsubmit="return validateInputs()">
     <div class="input_div">

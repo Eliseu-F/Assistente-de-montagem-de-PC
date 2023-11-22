@@ -3,7 +3,6 @@
 %>
 
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -90,7 +89,7 @@
 
         .card .img1,
         .card2 .img1 {
-            background-image: url("imgs/notebook.jpg");
+            background-image: url("imgs/lol.jpg");
             background-position: center;
             background-size: cover;
             width: 360px;
@@ -106,7 +105,7 @@
 
         .card .img2,
         .card2 .img2 {
-            background-image: url("imgs/pcgamer.jpg");
+            background-image: url("imgs/img2.jpg");
             background-position: center;
             background-size: cover;
             width: 360px;
@@ -270,30 +269,62 @@
             left: 20px;
             z-index: 1;
         }
+        nav {
+            position: absolute;
+            top: 20px;
+            left: 800px;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            background-color: #191970;
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .texto {
+            position: absolute;
+            top: 200px;
+            left: 650px;
+            color: white;
+            padding: 0;
+            text-align: right;
+            font-family: "Roboto", bold;
+            font-size: 50px;
+        }
+
     </style>
 </head>
 
 <body class="container">
+    <nav>
+        <a href="/home.jsp" style="color: #696969;">Home</a>
+        <a href="/jogos.jsp">Jogos</a>
+        <a href="/inicial.jsp">Sair</a>
+    </nav>
+
     <header class="header">
         <a href="/home.jsp">
             <img src="imgs/logo.svg" class="logo" alt="Logo" style="width: 350px; height: 150px; position: absolute; z-index: 1">
         </a>
         <h1>Ola, <%= username %></h1>
-        <a class="sair" href="/login.jsp">Sair</a>
     </header>
+    <div class="texto">
+            Ultimas novidades do mercado
+        </div>
     <div class="container2">
         <div class="card">
             <div class="img img1">
-                <span>PC Profissional</span>
+                <span>Mundo dos games</span>
             </div>
             <div class="content">
-                <span class="title">Impulsione sua Produtividade com Computadores Profissionais</span>
+                <span class="title">Worlds 2023: T1 atropela Weibo e é tetracampeã mundial de LoL</span>
                 <p class="desc">
-                    Conheça os computadores projetados para oferecer desempenho excepcional, proporcionando uma experiência de trabalho rápida e eficiente. Desde a inicialização até a execução de tarefas complexas, você experimentará uma melhoria significativa na velocidade e na capacidade de resposta.
-
-                    Conte com a confiabilidade do hardware e a estabilidade do sistema operacional para manter seus projetos em andamento sem interrupções. Nossos computadores são construídos com componentes de alta qualidade, garantindo durabilidade e minimizando a probabilidade de falhas.
-
-                    Proteja seus dados e informações confidenciais com recursos de segurança avançados. Nossos computadores vêm com soluções integradas para proteção contra ameaças cibernéticas, garantindo um ambiente de trabalho seguro e livre de preocupações.
+                    A T1 é a grande campeã do Worlds 2023, o Mundial de League of Legends. A equipe, que atropelou a Weibo Gaming neste domingo (19) por 3x0, cravou seu quarto título e se isolou como a maior vencedora da história. O midlaner sul-coreano Lee "Faker" Sang-hyeok, agora é oficialmente o maior vencedor de mundiais na história da modalidade.
                 </p>
             </div>
             <div class="arrow">
@@ -302,14 +333,14 @@
         </div>
         <div class="card" href="/jogos.jsp">
             <div class="img img2">
-                <span>PC Gamer</span>
+                <span>Computadores</span>
             </div>
             <div class="content">
-                <span class="title">Vantagens de um Computador Gamer</span>
+                <span class="title">Quanto pagar em placa de vídeo na Black Friday? Veja um guia</span>
                 <p class="desc">
-                    Faça parte de uma comunidade apaixonada por games e participe de competições online. Um PC gamer não é apenas uma máquina, mas uma entrada para um mundo de interação e desafios.
+                     Muitos aproveitam para montar seus PCs ou dar upgrades nos seus computadores durante a Black Friday, inclusive suas placas de vídeo. No entanto, com muitas opções para escolher, é bom ter um guia para saber se as promoções valem a pena ou não.
 
-                    Invista em um computador gamer e eleve sua experiência de entretenimento digital a patamares inimagináveis. Seja para jogar os últimos lançamentos ou realizar tarefas exigentes, um PC gamer é a escolha certa para quem busca performance e versatilidade.
+                     Acompanhe a tabela completa montada pela tecmundo brasil como guia de promoções: https://www.tecmundo.com.br/produto/274025-pagar-placa-video-black-friday-veja-guia-precos.htm.
                 </p>
             </div>
             <div class="arrow">
