@@ -4,13 +4,14 @@
 <head>
     <style>
         body {
-            font-size: 16px;
-            margin: 0;
-            padding: 0;
-            background-image: url('imgs/background.svg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+                        background-color: #f4f4f4;
+                        background-image: url('imgs/background.png');
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        margin: 0;
+                        padding: 0;
         }
 
         header {

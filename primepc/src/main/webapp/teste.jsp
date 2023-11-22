@@ -13,6 +13,7 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            height: 95vh;
         }
         header {
             display: flex;
@@ -152,7 +153,6 @@
         <div class="card" onclick="window.location.href='/especificacao.jsp'">
             <img src="imgs/computer.jpg" alt="League Of Legends">
             <p class="text_games">Pacote Office</p>
->>>>>>> fc7c55e513a83296dd2c09e91177c4c0ee2ae920:primepc/src/main/webapp/teste.jsp
         </div>
 
         <div class="container_buttons">
